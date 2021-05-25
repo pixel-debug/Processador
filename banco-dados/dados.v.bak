@@ -1,0 +1,35 @@
+module memoria_dados(label, escrever, dadoEscrito, clk, reset, LerMemo, EscrMemo);
+	input [7:0] label;
+	input [7:0] dadoEscrito;
+	reg clk, reset, EscrMemo, LerMemo;
+	output reg[7:0] escrever;
+	
+	reg[7:0] Memo[29:0];
+	
+	integer i;
+	
+	initial
+		begin	
+			for(i = 0; i < 29 ; i = i + 1) Memo[i] = i;
+		end
+	always@(posedge clk)
+		begin	
+			if(EscrMemo)
+				begin
+					escrever <= Memo[label];
+				end
+			if(reset)
+				begin
+				for(i = 0; i < 29; i = i + 1)Memo[i] = 0;
+				end
+		end
+	always@ (negedge clk)
+		begin 
+			if(LerMemo)
+				begin
+				escrever <= Memo[label];
+				end
+		end
+endmodule					
+	
+	

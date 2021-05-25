@@ -1,0 +1,19 @@
+|jumper
+label[0] => label_extendido[2].DATAIN
+label[1] => label_extendido[3].DATAIN
+label[2] => label_extendido[4].DATAIN
+label[3] => label_extendido[5].DATAIN
+label[4] => label_extendido[6].DATAIN
+label[5] => label_extendido[7].DATAIN
+label[6] => ~NO_FANOUT~
+label[7] => ~NO_FANOUT~
+label_extendido[0] <= <GND>
+label_extendido[1] <= <GND>
+label_extendido[2] <= label[0].DB_MAX_OUTPUT_PORT_TYPE
+label_extendido[3] <= label[1].DB_MAX_OUTPUT_PORT_TYPE
+label_extendido[4] <= label[2].DB_MAX_OUTPUT_PORT_TYPE
+label_extendido[5] <= label[3].DB_MAX_OUTPUT_PORT_TYPE
+label_extendido[6] <= label[4].DB_MAX_OUTPUT_PORT_TYPE
+label_extendido[7] <= label[5].DB_MAX_OUTPUT_PORT_TYPE
+
+

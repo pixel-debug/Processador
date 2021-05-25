@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\Aula-9-Lab-AOC1_marina-bernardes-diniz\ExtensorSinal\simulation\modelsim
+vextensor
+IX]4zP:;[k4DbagT3Re@TU0
+VSeoeAl:<kni09QV7U?8XU0
+Z1 dC:\marinaSD\PROCESSADOR\Aula-9-Lab-AOC1_marina-bernardes-diniz\ExtensorSinal\simulation\modelsim
+w1617758278
+8C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/extensor.v
+FC:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/extensor.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 ]n<:7DolCehDio3fWHSkS2
+!s85 0
+!s108 1617758293.891000
+!s107 C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/extensor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal|C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/extensor.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal -O0
+vtest_extensor
+!i10b 1
+!s100 AH_ghZABVLJG>A9kg^[eG2
+IkWU6P73>=`fVYZNVGGQdh0
+VVe4`EKO9oK=S`<d=3FP<B2
+R1
+w1617757962
+8C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/test_extensor.v
+FC:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/test_extensor.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1617758294.081000
+!s107 C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/test_extensor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal|C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/test_extensor.v|
+!s101 -O0
+R3
+R4

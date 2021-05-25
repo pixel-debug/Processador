@@ -1,0 +1,22 @@
+|ulaControl
+ALUOp => ALUCtl[1]$latch.LATCH_ENABLE
+ALUOp => ALUCtl[0]$latch.LATCH_ENABLE
+ALUOp => ALUCtl[2]$latch.LATCH_ENABLE
+ALUOp => ALUCtl[3]$latch.LATCH_ENABLE
+FuncCode_tipoR[0] => Decoder0.IN3
+FuncCode_tipoR[0] => Decoder1.IN2
+FuncCode_tipoR[1] => Decoder0.IN2
+FuncCode_tipoR[2] => Decoder0.IN1
+FuncCode_tipoR[2] => Decoder1.IN1
+FuncCode_tipoR[3] => Decoder0.IN0
+FuncCode_tipoR[3] => Decoder1.IN0
+FuncCode[0] => Equal0.IN3
+FuncCode[0] => Equal1.IN3
+FuncCode[1] => Equal0.IN2
+FuncCode[1] => Equal1.IN2
+ALUCtl[0] <= ALUCtl[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUCtl[1] <= ALUCtl[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUCtl[2] <= ALUCtl[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ALUCtl[3] <= ALUCtl[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

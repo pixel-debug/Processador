@@ -1,0 +1,49 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do ula_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA {C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/ula.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ula
+# 
+# Top level modules:
+# 	ula
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA {C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/test_ula.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_ula
+# 
+# Top level modules:
+# 	test_ula
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test_ula
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_ula 
+# Loading work.test_ula
+# Loading work.ula
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Testando ULA...
+#  controle = 0000 	saida = 000000000  zero = 1  reg 1 = 00   reg 2 = 00
+#  controle = 0000 	saida = 000000000  zero = 1  reg 1 = 11   reg 2 = 00
+#  controle = 0000 	saida = 000000000  zero = 1  reg 1 = 11   reg 2 = 01
+#  controle = 0010 	saida = 000000001  zero = 0  reg 1 = 11   reg 2 = 01
+#  controle = 0100 	saida = 000000100  zero = 0  reg 1 = 11   reg 2 = 01
+#  controle = 0100 	saida = 000000001  zero = 0  reg 1 = 00   reg 2 = 01
+#  controle = 0100 	saida = 000000001  zero = 0  reg 1 = 00   reg 2 = 10
+#  controle = 0101 	saida = 111111110  zero = 0  reg 1 = 00   reg 2 = 10
+# Break in NamedBeginStat stop_at at C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/test_ula.v line 10
+# Simulation Breakpoint: Break in NamedBeginStat stop_at at C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/test_ula.v line 10
+# MACRO ./ula_run_msim_rtl_verilog.do PAUSED at line 17

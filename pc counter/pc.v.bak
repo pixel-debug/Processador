@@ -1,0 +1,16 @@
+module PC(clk, pc_in, pc_out);
+	input clk;
+	input [7:0]pc_in;
+	output reg[7:0]pc_out;
+	
+	always@(posedge clk) begin
+		pc_out = pc_in;
+	end
+endmodule
+
+module pc_add(pc, pc1);
+	input[7:0]pc;
+	output[7:0]pc1;
+	
+	assign pc1 = pc +1;
+endmodule

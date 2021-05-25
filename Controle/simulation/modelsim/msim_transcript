@@ -1,0 +1,52 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do controleUnit_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle {C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/controleUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controleUnit
+# 
+# Top level modules:
+# 	controleUnit
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle {C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/test_controle.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_controle
+# 
+# Top level modules:
+# 	test_controle
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test_controle
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_controle 
+# Loading work.test_controle
+# Loading work.controleUnit
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Testando CONTROLE ...
+#  Instrucao = 00000000  reset = 1 	escrita = 0 escritaPC = 0 ulaFonte = 0 ulaOP = 0 pula = 0 regFonte = 0 comparador = 0 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000001  reset = 1 	escrita = 0 escritaPC = 0 ulaFonte = 0 ulaOP = 0 pula = 0 regFonte = 0 comparador = 0 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000001  reset = 0 	escrita = 0 escritaPC = 1 ulaFonte = 1 ulaOP = 0 pula = 0 regFonte = 0 comparador = 0 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000010  reset = 0 	escrita = 0 escritaPC = 1 ulaFonte = 1 ulaOP = 0 pula = 0 regFonte = 0 comparador = 0 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000010  reset = 0 	escrita = 0 escritaPC = 0 ulaFonte = 0 ulaOP = 1 pula = 0 regFonte = 0 comparador = 0 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000011  reset = 0 	escrita = 0 escritaPC = 1 ulaFonte = 0 ulaOP = 0 pula = 1 regFonte = 0 comparador = 0 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000100  reset = 0 	escrita = 0 escritaPC = 1 ulaFonte = 0 ulaOP = 0 pula = 1 regFonte = 0 comparador = 0 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000100  reset = 0 	escrita = 0 escritaPC = 0 ulaFonte = 0 ulaOP = 0 pula = 0 regFonte = 1 comparador = 0 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000101  reset = 0 	escrita = 0 escritaPC = 1 ulaFonte = 0 ulaOP = 0 pula = 0 regFonte = 0 comparador = 1 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000110  reset = 0 	escrita = 0 escritaPC = 1 ulaFonte = 0 ulaOP = 0 pula = 0 regFonte = 0 comparador = 1 lerMemo = 0 escreveMemo = 0
+#  Instrucao = 00000110  reset = 0 	escrita = 0 escritaPC = 0 ulaFonte = 0 ulaOP = 0 pula = 0 regFonte = 0 comparador = 0 lerMemo = 1 escreveMemo = 0
+# Break in NamedBeginStat stop_at at C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/test_controle.v line 14
+# Simulation Breakpoint: Break in NamedBeginStat stop_at at C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/test_controle.v line 14
+# MACRO ./controleUnit_run_msim_rtl_verilog.do PAUSED at line 17

@@ -1,0 +1,1269 @@
+TimeQuest Timing Analyzer report for dados
+Fri Mar 19 00:33:13 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clk'
+ 12. Slow Model Hold: 'clk'
+ 13. Slow Model Minimum Pulse Width: 'clk'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'clk'
+ 24. Fast Model Hold: 'clk'
+ 25. Fast Model Minimum Pulse Width: 'clk'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; dados                                                             ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; clk        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 134.84 MHz ; 134.84 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -3.208 ; -23.766       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 1.450 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -249.380              ;
++-------+--------+-----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clk'                                                                                       ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node   ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; -3.208 ; Memo[8][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.728      ;
+; -3.170 ; Memo[26][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.714      ;
+; -3.165 ; Memo[17][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.007     ; 3.694      ;
+; -3.124 ; Memo[9][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 3.661      ;
+; -3.077 ; Memo[12][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.597      ;
+; -3.076 ; Memo[6][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.596      ;
+; -3.043 ; Memo[25][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.587      ;
+; -3.022 ; Memo[12][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.542      ;
+; -2.993 ; Memo[4][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.525      ;
+; -2.977 ; Memo[6][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.497      ;
+; -2.976 ; Memo[8][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.496      ;
+; -2.964 ; Memo[6][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.496      ;
+; -2.964 ; Memo[26][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.508      ;
+; -2.953 ; Memo[13][0] ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.041      ; 3.530      ;
+; -2.949 ; Memo[4][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.469      ;
+; -2.945 ; Memo[8][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.477      ;
+; -2.910 ; Memo[7][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.440      ;
+; -2.892 ; Memo[14][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.412      ;
+; -2.889 ; Memo[0][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.409      ;
+; -2.862 ; Memo[0][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.394      ;
+; -2.853 ; Memo[16][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.383      ;
+; -2.853 ; Memo[2][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.017     ; 3.372      ;
+; -2.848 ; Memo[8][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.368      ;
+; -2.848 ; Memo[24][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.392      ;
+; -2.841 ; Memo[18][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.371      ;
+; -2.833 ; Memo[17][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 3.374      ;
+; -2.831 ; Memo[8][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.351      ;
+; -2.821 ; Memo[13][6] ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; 0.029      ; 3.386      ;
+; -2.813 ; Memo[17][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.007     ; 3.342      ;
+; -2.812 ; Memo[7][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.342      ;
+; -2.811 ; Memo[3][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.341      ;
+; -2.809 ; Memo[1][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 3.346      ;
+; -2.796 ; Memo[10][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.017     ; 3.315      ;
+; -2.792 ; Memo[26][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.020      ; 3.348      ;
+; -2.790 ; Memo[17][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.007     ; 3.319      ;
+; -2.784 ; Memo[9][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.013      ; 3.333      ;
+; -2.778 ; Memo[13][2] ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; 0.041      ; 3.355      ;
+; -2.769 ; Memo[7][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.299      ;
+; -2.759 ; Memo[2][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.017     ; 3.278      ;
+; -2.750 ; Memo[13][4] ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; 0.029      ; 3.315      ;
+; -2.747 ; Memo[7][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.277      ;
+; -2.746 ; Memo[22][4] ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.012     ; 3.270      ;
+; -2.746 ; Memo[8][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.278      ;
+; -2.743 ; Memo[12][6] ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.263      ;
+; -2.738 ; Memo[6][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.258      ;
+; -2.737 ; Memo[13][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.041      ; 3.314      ;
+; -2.714 ; Memo[9][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 3.251      ;
+; -2.712 ; Memo[12][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.232      ;
+; -2.706 ; Memo[19][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.007     ; 3.235      ;
+; -2.704 ; Memo[4][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.224      ;
+; -2.693 ; Memo[7][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.006      ; 3.235      ;
+; -2.693 ; Memo[7][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.223      ;
+; -2.686 ; Memo[10][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.005     ; 3.217      ;
+; -2.683 ; Memo[26][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.227      ;
+; -2.681 ; Memo[27][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.225      ;
+; -2.677 ; Memo[8][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.209      ;
+; -2.669 ; Memo[9][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 3.206      ;
+; -2.668 ; Memo[0][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.188      ;
+; -2.667 ; Memo[25][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.020      ; 3.223      ;
+; -2.665 ; Memo[26][0] ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.020      ; 3.221      ;
+; -2.664 ; Memo[6][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.196      ;
+; -2.659 ; Memo[2][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.017     ; 3.178      ;
+; -2.647 ; Memo[2][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.005     ; 3.178      ;
+; -2.645 ; Memo[7][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.006      ; 3.187      ;
+; -2.643 ; Memo[3][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.173      ;
+; -2.642 ; Memo[24][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.186      ;
+; -2.642 ; Memo[25][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.186      ;
+; -2.640 ; Memo[10][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.012      ; 3.188      ;
+; -2.636 ; Memo[9][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; 0.013      ; 3.185      ;
+; -2.631 ; Memo[12][2] ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.163      ;
+; -2.628 ; Memo[6][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.160      ;
+; -2.617 ; Memo[14][6] ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.137      ;
+; -2.598 ; Memo[3][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.128      ;
+; -2.595 ; Memo[14][0] ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.127      ;
+; -2.588 ; Memo[9][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 3.125      ;
+; -2.574 ; Memo[11][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 3.111      ;
+; -2.561 ; Memo[7][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; 0.006      ; 3.103      ;
+; -2.558 ; Memo[12][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 3.090      ;
+; -2.557 ; Memo[9][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.013      ; 3.106      ;
+; -2.548 ; Memo[18][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.078      ;
+; -2.537 ; Memo[0][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.017     ; 3.056      ;
+; -2.536 ; Memo[0][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.056      ;
+; -2.519 ; Memo[3][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.006      ; 3.061      ;
+; -2.517 ; Memo[16][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.006      ; 3.059      ;
+; -2.515 ; Memo[18][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.006      ; 3.057      ;
+; -2.513 ; Memo[0][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.033      ;
+; -2.499 ; Memo[4][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.016     ; 3.019      ;
+; -2.495 ; Memo[16][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.025      ;
+; -2.472 ; Memo[1][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.013      ; 3.021      ;
+; -2.471 ; Memo[16][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 3.001      ;
+; -2.470 ; Memo[24][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.020      ; 3.026      ;
+; -2.469 ; Memo[27][6] ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 3.013      ;
+; -2.459 ; Memo[17][4] ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.007     ; 2.988      ;
+; -2.450 ; Memo[27][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 2.994      ;
+; -2.446 ; Memo[9][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 2.983      ;
+; -2.428 ; Memo[0][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 2.960      ;
+; -2.419 ; Memo[2][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.017     ; 2.938      ;
+; -2.417 ; Memo[3][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 2.947      ;
+; -2.413 ; Memo[24][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 2.957      ;
+; -2.410 ; Memo[27][2] ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; 0.020      ; 2.966      ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clk'                                                                                       ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node   ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; 1.450 ; Memo[28][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.216      ;
+; 1.492 ; Memo[29][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.258      ;
+; 1.496 ; Memo[29][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.262      ;
+; 1.782 ; Memo[28][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.536      ;
+; 1.859 ; Memo[29][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.625      ;
+; 1.921 ; Memo[28][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.687      ;
+; 1.933 ; Memo[28][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.699      ;
+; 1.963 ; Memo[23][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.729      ;
+; 2.032 ; Memo[22][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.798      ;
+; 2.068 ; Memo[18][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.006      ; 1.840      ;
+; 2.095 ; Memo[23][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.849      ;
+; 2.100 ; Memo[23][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.854      ;
+; 2.106 ; Memo[23][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.860      ;
+; 2.146 ; Memo[26][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 1.920      ;
+; 2.150 ; Memo[13][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.029      ; 1.945      ;
+; 2.161 ; Memo[28][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.927      ;
+; 2.165 ; Memo[28][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.931      ;
+; 2.181 ; Memo[29][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.935      ;
+; 2.194 ; Memo[19][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.007     ; 1.953      ;
+; 2.237 ; Memo[21][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.003      ;
+; 2.275 ; Memo[21][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.029      ;
+; 2.288 ; Memo[29][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.054      ;
+; 2.289 ; Memo[18][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 2.049      ;
+; 2.324 ; Memo[15][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.091      ;
+; 2.330 ; Memo[22][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.084      ;
+; 2.334 ; Memo[24][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 2.108      ;
+; 2.354 ; Memo[17][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 2.125      ;
+; 2.365 ; Memo[21][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.131      ;
+; 2.400 ; Memo[23][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.154      ;
+; 2.427 ; Memo[20][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.193      ;
+; 2.439 ; Memo[11][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.206      ;
+; 2.448 ; Memo[15][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.215      ;
+; 2.456 ; Memo[10][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.017     ; 2.205      ;
+; 2.456 ; Memo[28][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.210      ;
+; 2.457 ; Memo[5][5]  ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.224      ;
+; 2.462 ; Memo[16][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.006      ; 2.234      ;
+; 2.473 ; Memo[29][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.239      ;
+; 2.498 ; Memo[26][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.020      ; 2.284      ;
+; 2.502 ; Memo[11][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.269      ;
+; 2.505 ; Memo[27][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.020      ; 2.291      ;
+; 2.507 ; Memo[14][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; -0.004     ; 2.269      ;
+; 2.527 ; Memo[21][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.281      ;
+; 2.536 ; Memo[25][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 2.310      ;
+; 2.545 ; Memo[11][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.312      ;
+; 2.581 ; Memo[11][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 2.341      ;
+; 2.585 ; Memo[17][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.007     ; 2.344      ;
+; 2.599 ; Memo[5][1]  ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.013      ; 2.378      ;
+; 2.605 ; Memo[23][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.371      ;
+; 2.631 ; Memo[5][7]  ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.398      ;
+; 2.653 ; Memo[5][4]  ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.420      ;
+; 2.654 ; Memo[15][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 2.414      ;
+; 2.670 ; Memo[23][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.436      ;
+; 2.679 ; Memo[29][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.433      ;
+; 2.682 ; Memo[16][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 2.442      ;
+; 2.683 ; Memo[20][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.437      ;
+; 2.683 ; Memo[5][2]  ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.013      ; 2.462      ;
+; 2.700 ; Memo[19][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 2.471      ;
+; 2.706 ; Memo[20][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.460      ;
+; 2.711 ; Memo[14][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.012      ; 2.489      ;
+; 2.714 ; Memo[22][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.468      ;
+; 2.717 ; Memo[13][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; 0.029      ; 2.512      ;
+; 2.719 ; Memo[20][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.473      ;
+; 2.721 ; Memo[19][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.007     ; 2.480      ;
+; 2.723 ; Memo[20][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.477      ;
+; 2.724 ; Memo[11][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.491      ;
+; 2.724 ; Memo[5][6]  ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.491      ;
+; 2.736 ; Memo[15][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.029      ; 2.531      ;
+; 2.736 ; Memo[21][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.502      ;
+; 2.736 ; Memo[10][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; -0.005     ; 2.497      ;
+; 2.738 ; Memo[24][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 2.512      ;
+; 2.748 ; Memo[17][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 2.519      ;
+; 2.750 ; Memo[4][1]  ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; -0.004     ; 2.512      ;
+; 2.753 ; Memo[19][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 2.524      ;
+; 2.755 ; Memo[11][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.522      ;
+; 2.793 ; Memo[27][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 2.567      ;
+; 2.796 ; Memo[10][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.017     ; 2.545      ;
+; 2.805 ; Memo[4][2]  ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; -0.004     ; 2.567      ;
+; 2.812 ; Memo[22][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.566      ;
+; 2.815 ; Memo[28][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.569      ;
+; 2.821 ; Memo[18][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 2.581      ;
+; 2.825 ; Memo[25][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 2.599      ;
+; 2.837 ; Memo[15][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 2.604      ;
+; 2.846 ; Memo[18][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 2.606      ;
+; 2.849 ; Memo[5][0]  ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.013      ; 2.628      ;
+; 2.850 ; Memo[2][4]  ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.017     ; 2.599      ;
+; 2.850 ; Memo[27][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.020      ; 2.636      ;
+; 2.852 ; Memo[20][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.618      ;
+; 2.854 ; Memo[27][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 2.628      ;
+; 2.857 ; Memo[14][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; -0.004     ; 2.619      ;
+; 2.878 ; Memo[20][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 2.644      ;
+; 2.881 ; Memo[19][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 2.652      ;
+; 2.886 ; Memo[12][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.016     ; 2.636      ;
+; 2.887 ; Memo[25][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.020      ; 2.673      ;
+; 2.889 ; Memo[4][5]  ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.016     ; 2.639      ;
+; 2.890 ; Memo[29][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.644      ;
+; 2.902 ; Memo[23][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 2.656      ;
+; 2.902 ; Memo[16][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 2.662      ;
+; 2.911 ; Memo[6][7]  ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.017     ; 2.660      ;
+; 2.916 ; Memo[4][6]  ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.016     ; 2.666      ;
+; 2.919 ; Memo[25][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 2.693      ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                        ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target      ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[15][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[15][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[15][1] ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+
+
++-----------------------------------------------------------------------------+
+; Setup Times                                                                 ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; EscrMemo        ; clk        ; 8.407 ; 8.407 ; Rise       ; clk             ;
+; dadoEscrito[*]  ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
+;  dadoEscrito[0] ; clk        ; 5.846 ; 5.846 ; Rise       ; clk             ;
+;  dadoEscrito[1] ; clk        ; 5.845 ; 5.845 ; Rise       ; clk             ;
+;  dadoEscrito[2] ; clk        ; 5.839 ; 5.839 ; Rise       ; clk             ;
+;  dadoEscrito[3] ; clk        ; 5.710 ; 5.710 ; Rise       ; clk             ;
+;  dadoEscrito[4] ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
+;  dadoEscrito[5] ; clk        ; 5.525 ; 5.525 ; Rise       ; clk             ;
+;  dadoEscrito[6] ; clk        ; 5.902 ; 5.902 ; Rise       ; clk             ;
+;  dadoEscrito[7] ; clk        ; 5.889 ; 5.889 ; Rise       ; clk             ;
+; label[*]        ; clk        ; 8.354 ; 8.354 ; Rise       ; clk             ;
+;  label[0]       ; clk        ; 6.944 ; 6.944 ; Rise       ; clk             ;
+;  label[1]       ; clk        ; 6.720 ; 6.720 ; Rise       ; clk             ;
+;  label[2]       ; clk        ; 3.772 ; 3.772 ; Rise       ; clk             ;
+;  label[3]       ; clk        ; 2.989 ; 2.989 ; Rise       ; clk             ;
+;  label[4]       ; clk        ; 6.130 ; 6.130 ; Rise       ; clk             ;
+;  label[5]       ; clk        ; 8.093 ; 8.093 ; Rise       ; clk             ;
+;  label[6]       ; clk        ; 8.354 ; 8.354 ; Rise       ; clk             ;
+;  label[7]       ; clk        ; 8.265 ; 8.265 ; Rise       ; clk             ;
+; reset           ; clk        ; 6.237 ; 6.237 ; Rise       ; clk             ;
+; LerMemo         ; clk        ; 4.489 ; 4.489 ; Fall       ; clk             ;
+; label[*]        ; clk        ; 7.269 ; 7.269 ; Fall       ; clk             ;
+;  label[0]       ; clk        ; 7.059 ; 7.059 ; Fall       ; clk             ;
+;  label[1]       ; clk        ; 7.269 ; 7.269 ; Fall       ; clk             ;
+;  label[2]       ; clk        ; 3.611 ; 3.611 ; Fall       ; clk             ;
+;  label[3]       ; clk        ; 3.365 ; 3.365 ; Fall       ; clk             ;
+;  label[4]       ; clk        ; 4.893 ; 4.893 ; Fall       ; clk             ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; EscrMemo        ; clk        ; -6.670 ; -6.670 ; Rise       ; clk             ;
+; dadoEscrito[*]  ; clk        ; -3.441 ; -3.441 ; Rise       ; clk             ;
+;  dadoEscrito[0] ; clk        ; -3.744 ; -3.744 ; Rise       ; clk             ;
+;  dadoEscrito[1] ; clk        ; -3.844 ; -3.844 ; Rise       ; clk             ;
+;  dadoEscrito[2] ; clk        ; -3.595 ; -3.595 ; Rise       ; clk             ;
+;  dadoEscrito[3] ; clk        ; -3.441 ; -3.441 ; Rise       ; clk             ;
+;  dadoEscrito[4] ; clk        ; -3.738 ; -3.738 ; Rise       ; clk             ;
+;  dadoEscrito[5] ; clk        ; -3.670 ; -3.670 ; Rise       ; clk             ;
+;  dadoEscrito[6] ; clk        ; -3.670 ; -3.670 ; Rise       ; clk             ;
+;  dadoEscrito[7] ; clk        ; -3.660 ; -3.660 ; Rise       ; clk             ;
+; label[*]        ; clk        ; -0.073 ; -0.073 ; Rise       ; clk             ;
+;  label[0]       ; clk        ; -4.734 ; -4.734 ; Rise       ; clk             ;
+;  label[1]       ; clk        ; -4.788 ; -4.788 ; Rise       ; clk             ;
+;  label[2]       ; clk        ; -0.073 ; -0.073 ; Rise       ; clk             ;
+;  label[3]       ; clk        ; -0.923 ; -0.923 ; Rise       ; clk             ;
+;  label[4]       ; clk        ; -4.281 ; -4.281 ; Rise       ; clk             ;
+;  label[5]       ; clk        ; -6.356 ; -6.356 ; Rise       ; clk             ;
+;  label[6]       ; clk        ; -6.617 ; -6.617 ; Rise       ; clk             ;
+;  label[7]       ; clk        ; -6.528 ; -6.528 ; Rise       ; clk             ;
+; reset           ; clk        ; -4.263 ; -4.263 ; Rise       ; clk             ;
+; LerMemo         ; clk        ; -3.968 ; -3.968 ; Fall       ; clk             ;
+; label[*]        ; clk        ; -0.121 ; -0.121 ; Fall       ; clk             ;
+;  label[0]       ; clk        ; -4.527 ; -4.527 ; Fall       ; clk             ;
+;  label[1]       ; clk        ; -4.670 ; -4.670 ; Fall       ; clk             ;
+;  label[2]       ; clk        ; -0.320 ; -0.320 ; Fall       ; clk             ;
+;  label[3]       ; clk        ; -0.121 ; -0.121 ; Fall       ; clk             ;
+;  label[4]       ; clk        ; -3.915 ; -3.915 ; Fall       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; escrever[*]  ; clk        ; 7.001 ; 7.001 ; Fall       ; clk             ;
+;  escrever[0] ; clk        ; 6.696 ; 6.696 ; Fall       ; clk             ;
+;  escrever[1] ; clk        ; 6.695 ; 6.695 ; Fall       ; clk             ;
+;  escrever[2] ; clk        ; 6.685 ; 6.685 ; Fall       ; clk             ;
+;  escrever[3] ; clk        ; 6.692 ; 6.692 ; Fall       ; clk             ;
+;  escrever[4] ; clk        ; 6.701 ; 6.701 ; Fall       ; clk             ;
+;  escrever[5] ; clk        ; 6.959 ; 6.959 ; Fall       ; clk             ;
+;  escrever[6] ; clk        ; 6.942 ; 6.942 ; Fall       ; clk             ;
+;  escrever[7] ; clk        ; 7.001 ; 7.001 ; Fall       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; escrever[*]  ; clk        ; 6.685 ; 6.685 ; Fall       ; clk             ;
+;  escrever[0] ; clk        ; 6.696 ; 6.696 ; Fall       ; clk             ;
+;  escrever[1] ; clk        ; 6.695 ; 6.695 ; Fall       ; clk             ;
+;  escrever[2] ; clk        ; 6.685 ; 6.685 ; Fall       ; clk             ;
+;  escrever[3] ; clk        ; 6.692 ; 6.692 ; Fall       ; clk             ;
+;  escrever[4] ; clk        ; 6.701 ; 6.701 ; Fall       ; clk             ;
+;  escrever[5] ; clk        ; 6.959 ; 6.959 ; Fall       ; clk             ;
+;  escrever[6] ; clk        ; 6.942 ; 6.942 ; Fall       ; clk             ;
+;  escrever[7] ; clk        ; 7.001 ; 7.001 ; Fall       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -1.165 ; -8.558        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 0.960 ; 0.000         ;
++-------+-------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; clk   ; -1.380 ; -249.380              ;
++-------+--------+-----------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clk'                                                                                       ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node   ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; -1.165 ; Memo[8][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.682      ;
+; -1.138 ; Memo[12][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.655      ;
+; -1.133 ; Memo[9][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 1.666      ;
+; -1.121 ; Memo[26][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.661      ;
+; -1.118 ; Memo[12][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.635      ;
+; -1.116 ; Memo[17][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.642      ;
+; -1.114 ; Memo[6][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.631      ;
+; -1.082 ; Memo[8][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.599      ;
+; -1.071 ; Memo[25][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.611      ;
+; -1.070 ; Memo[6][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.587      ;
+; -1.068 ; Memo[6][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.596      ;
+; -1.062 ; Memo[4][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.579      ;
+; -1.058 ; Memo[4][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.586      ;
+; -1.055 ; Memo[0][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.572      ;
+; -1.051 ; Memo[8][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.579      ;
+; -1.051 ; Memo[13][0] ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.035      ; 1.618      ;
+; -1.033 ; Memo[14][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.550      ;
+; -1.033 ; Memo[0][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.561      ;
+; -1.028 ; Memo[7][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.554      ;
+; -1.027 ; Memo[1][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.000      ; 1.559      ;
+; -1.017 ; Memo[2][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.534      ;
+; -1.013 ; Memo[8][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.530      ;
+; -1.012 ; Memo[16][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.538      ;
+; -1.012 ; Memo[8][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.529      ;
+; -1.009 ; Memo[24][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.549      ;
+; -1.007 ; Memo[26][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.547      ;
+; -1.007 ; Memo[2][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.524      ;
+; -0.997 ; Memo[7][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.523      ;
+; -0.994 ; Memo[10][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.511      ;
+; -0.980 ; Memo[0][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.497      ;
+; -0.980 ; Memo[3][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.506      ;
+; -0.978 ; Memo[18][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.504      ;
+; -0.975 ; Memo[12][6] ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.492      ;
+; -0.974 ; Memo[9][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.012      ; 1.518      ;
+; -0.974 ; Memo[13][6] ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; 0.024      ; 1.530      ;
+; -0.973 ; Memo[17][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.499      ;
+; -0.972 ; Memo[6][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.489      ;
+; -0.968 ; Memo[12][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.485      ;
+; -0.965 ; Memo[17][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 1.502      ;
+; -0.965 ; Memo[13][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.035      ; 1.532      ;
+; -0.965 ; Memo[7][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.491      ;
+; -0.964 ; Memo[13][2] ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; 0.035      ; 1.531      ;
+; -0.963 ; Memo[22][4] ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.012     ; 1.483      ;
+; -0.963 ; Memo[4][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.480      ;
+; -0.963 ; Memo[7][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.489      ;
+; -0.960 ; Memo[2][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.477      ;
+; -0.957 ; Memo[2][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.485      ;
+; -0.954 ; Memo[13][4] ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; 0.024      ; 1.510      ;
+; -0.945 ; Memo[9][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 1.478      ;
+; -0.945 ; Memo[26][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.019      ; 1.496      ;
+; -0.943 ; Memo[10][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.009      ; 1.484      ;
+; -0.941 ; Memo[10][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.469      ;
+; -0.940 ; Memo[17][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.466      ;
+; -0.940 ; Memo[8][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.468      ;
+; -0.940 ; Memo[3][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.466      ;
+; -0.938 ; Memo[7][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.464      ;
+; -0.925 ; Memo[14][6] ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.442      ;
+; -0.924 ; Memo[7][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 1.461      ;
+; -0.923 ; Memo[8][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.451      ;
+; -0.922 ; Memo[3][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.448      ;
+; -0.914 ; Memo[7][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 1.451      ;
+; -0.914 ; Memo[6][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.442      ;
+; -0.910 ; Memo[9][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 1.443      ;
+; -0.908 ; Memo[0][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.425      ;
+; -0.908 ; Memo[6][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.436      ;
+; -0.906 ; Memo[0][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.423      ;
+; -0.906 ; Memo[26][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.446      ;
+; -0.906 ; Memo[19][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.432      ;
+; -0.903 ; Memo[0][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.420      ;
+; -0.903 ; Memo[9][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; 0.012      ; 1.447      ;
+; -0.897 ; Memo[12][2] ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.425      ;
+; -0.896 ; Memo[26][0] ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.019      ; 1.447      ;
+; -0.896 ; Memo[25][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.019      ; 1.447      ;
+; -0.895 ; Memo[24][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.435      ;
+; -0.893 ; Memo[4][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.410      ;
+; -0.891 ; Memo[3][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 1.428      ;
+; -0.889 ; Memo[14][0] ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.417      ;
+; -0.887 ; Memo[12][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.415      ;
+; -0.886 ; Memo[25][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.426      ;
+; -0.883 ; Memo[27][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.423      ;
+; -0.881 ; Memo[11][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 1.414      ;
+; -0.881 ; Memo[9][1]  ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.012      ; 1.425      ;
+; -0.880 ; Memo[9][4]  ; escrever[4]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 1.413      ;
+; -0.869 ; Memo[1][0]  ; escrever[0]~reg0 ; clk          ; clk         ; 0.500        ; 0.011      ; 1.412      ;
+; -0.867 ; Memo[7][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 1.404      ;
+; -0.862 ; Memo[16][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.388      ;
+; -0.860 ; Memo[2][6]  ; escrever[6]~reg0 ; clk          ; clk         ; 0.500        ; -0.015     ; 1.377      ;
+; -0.858 ; Memo[16][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 1.395      ;
+; -0.857 ; Memo[9][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.001      ; 1.390      ;
+; -0.855 ; Memo[18][7] ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.381      ;
+; -0.854 ; Memo[3][3]  ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.380      ;
+; -0.843 ; Memo[27][3] ; escrever[3]~reg0 ; clk          ; clk         ; 0.500        ; 0.008      ; 1.383      ;
+; -0.839 ; Memo[8][7]  ; escrever[7]~reg0 ; clk          ; clk         ; 0.500        ; 0.009      ; 1.380      ;
+; -0.836 ; Memo[3][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.362      ;
+; -0.834 ; Memo[1][5]  ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; 0.000      ; 1.366      ;
+; -0.833 ; Memo[24][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.019      ; 1.384      ;
+; -0.832 ; Memo[18][1] ; escrever[1]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 1.369      ;
+; -0.831 ; Memo[16][5] ; escrever[5]~reg0 ; clk          ; clk         ; 0.500        ; -0.006     ; 1.357      ;
+; -0.831 ; Memo[0][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; -0.004     ; 1.359      ;
+; -0.831 ; Memo[3][2]  ; escrever[2]~reg0 ; clk          ; clk         ; 0.500        ; 0.005      ; 1.368      ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clk'                                                                                       ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node   ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; 0.960 ; Memo[28][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.612      ;
+; 0.969 ; Memo[29][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.621      ;
+; 0.974 ; Memo[29][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.626      ;
+; 1.106 ; Memo[29][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.758      ;
+; 1.111 ; Memo[28][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 0.752      ;
+; 1.119 ; Memo[28][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.771      ;
+; 1.128 ; Memo[28][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.780      ;
+; 1.173 ; Memo[23][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.825      ;
+; 1.208 ; Memo[22][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; -0.001     ; 0.859      ;
+; 1.215 ; Memo[18][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 0.872      ;
+; 1.243 ; Memo[23][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 0.884      ;
+; 1.247 ; Memo[26][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 0.907      ;
+; 1.248 ; Memo[23][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 0.889      ;
+; 1.250 ; Memo[23][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 0.891      ;
+; 1.251 ; Memo[29][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 0.892      ;
+; 1.255 ; Memo[28][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.907      ;
+; 1.256 ; Memo[28][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.908      ;
+; 1.264 ; Memo[13][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.024      ; 0.940      ;
+; 1.265 ; Memo[19][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 0.911      ;
+; 1.278 ; Memo[29][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.930      ;
+; 1.290 ; Memo[21][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.942      ;
+; 1.308 ; Memo[18][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 0.954      ;
+; 1.317 ; Memo[21][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.969      ;
+; 1.323 ; Memo[21][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 0.964      ;
+; 1.329 ; Memo[24][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 0.989      ;
+; 1.340 ; Memo[17][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 0.997      ;
+; 1.345 ; Memo[23][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 0.986      ;
+; 1.346 ; Memo[15][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 0.998      ;
+; 1.359 ; Memo[22][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 0.999      ;
+; 1.359 ; Memo[29][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.011      ;
+; 1.369 ; Memo[15][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.021      ;
+; 1.373 ; Memo[20][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; -0.001     ; 1.024      ;
+; 1.380 ; Memo[16][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 1.037      ;
+; 1.393 ; Memo[21][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 1.034      ;
+; 1.396 ; Memo[28][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 1.037      ;
+; 1.400 ; Memo[26][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.019      ; 1.071      ;
+; 1.403 ; Memo[27][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.019      ; 1.074      ;
+; 1.408 ; Memo[25][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 1.068      ;
+; 1.409 ; Memo[11][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.061      ;
+; 1.417 ; Memo[5][5]  ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.069      ;
+; 1.418 ; Memo[10][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.015     ; 1.055      ;
+; 1.426 ; Memo[11][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 1.079      ;
+; 1.427 ; Memo[17][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.073      ;
+; 1.428 ; Memo[23][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.080      ;
+; 1.437 ; Memo[14][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; -0.004     ; 1.085      ;
+; 1.440 ; Memo[23][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.092      ;
+; 1.443 ; Memo[11][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.001      ; 1.096      ;
+; 1.472 ; Memo[16][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.118      ;
+; 1.472 ; Memo[11][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.118      ;
+; 1.475 ; Memo[21][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.127      ;
+; 1.476 ; Memo[24][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 1.136      ;
+; 1.477 ; Memo[5][1]  ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.011      ; 1.140      ;
+; 1.479 ; Memo[5][7]  ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.131      ;
+; 1.480 ; Memo[19][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 1.137      ;
+; 1.482 ; Memo[17][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 1.139      ;
+; 1.487 ; Memo[11][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.139      ;
+; 1.488 ; Memo[19][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 1.145      ;
+; 1.488 ; Memo[22][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.128      ;
+; 1.489 ; Memo[15][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.024      ; 1.165      ;
+; 1.492 ; Memo[29][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 1.133      ;
+; 1.493 ; Memo[5][4]  ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.145      ;
+; 1.497 ; Memo[11][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.149      ;
+; 1.501 ; Memo[5][2]  ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.011      ; 1.164      ;
+; 1.502 ; Memo[15][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.148      ;
+; 1.504 ; Memo[19][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.150      ;
+; 1.505 ; Memo[18][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.151      ;
+; 1.508 ; Memo[20][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.148      ;
+; 1.510 ; Memo[20][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.150      ;
+; 1.514 ; Memo[5][6]  ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.166      ;
+; 1.517 ; Memo[27][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 1.177      ;
+; 1.518 ; Memo[20][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.158      ;
+; 1.519 ; Memo[13][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; 0.024      ; 1.195      ;
+; 1.521 ; Memo[28][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 1.162      ;
+; 1.522 ; Memo[20][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.162      ;
+; 1.526 ; Memo[25][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 1.186      ;
+; 1.528 ; Memo[10][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; -0.004     ; 1.176      ;
+; 1.531 ; Memo[27][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 1.191      ;
+; 1.532 ; Memo[22][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.172      ;
+; 1.537 ; Memo[16][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.183      ;
+; 1.541 ; Memo[19][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 1.198      ;
+; 1.542 ; Memo[4][1]  ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; -0.004     ; 1.190      ;
+; 1.545 ; Memo[18][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.191      ;
+; 1.548 ; Memo[15][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.000      ; 1.200      ;
+; 1.548 ; Memo[4][2]  ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; -0.004     ; 1.196      ;
+; 1.549 ; Memo[29][4] ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 1.190      ;
+; 1.551 ; Memo[27][1] ; escrever[1]~reg0 ; clk          ; clk         ; -0.500       ; 0.019      ; 1.222      ;
+; 1.556 ; Memo[14][7] ; escrever[7]~reg0 ; clk          ; clk         ; -0.500       ; 0.009      ; 1.217      ;
+; 1.559 ; Memo[20][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; -0.001     ; 1.210      ;
+; 1.560 ; Memo[26][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 1.220      ;
+; 1.560 ; Memo[25][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; 0.019      ; 1.231      ;
+; 1.565 ; Memo[20][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; -0.001     ; 1.216      ;
+; 1.577 ; Memo[10][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; -0.015     ; 1.214      ;
+; 1.578 ; Memo[25][6] ; escrever[6]~reg0 ; clk          ; clk         ; -0.500       ; 0.008      ; 1.238      ;
+; 1.579 ; Memo[23][5] ; escrever[5]~reg0 ; clk          ; clk         ; -0.500       ; -0.011     ; 1.220      ;
+; 1.582 ; Memo[2][4]  ; escrever[4]~reg0 ; clk          ; clk         ; -0.500       ; -0.015     ; 1.219      ;
+; 1.583 ; Memo[22][2] ; escrever[2]~reg0 ; clk          ; clk         ; -0.500       ; -0.001     ; 1.234      ;
+; 1.585 ; Memo[22][3] ; escrever[3]~reg0 ; clk          ; clk         ; -0.500       ; -0.012     ; 1.225      ;
+; 1.586 ; Memo[5][0]  ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.011      ; 1.249      ;
+; 1.587 ; Memo[16][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; 0.005      ; 1.244      ;
+; 1.590 ; Memo[22][0] ; escrever[0]~reg0 ; clk          ; clk         ; -0.500       ; -0.001     ; 1.241      ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                        ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target      ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[0][7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[0][7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[10][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[10][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[11][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[11][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[12][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[12][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[13][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[13][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][1] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][1] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][2] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][2] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][3] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][3] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][4] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][4] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][5] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][5] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][6] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][6] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[14][7] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[14][7] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[15][0] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; Memo[15][0] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; Memo[15][1] ;
++--------+--------------+----------------+------------------+-------+------------+-------------+
+
+
++-----------------------------------------------------------------------------+
+; Setup Times                                                                 ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; EscrMemo        ; clk        ; 4.200 ; 4.200 ; Rise       ; clk             ;
+; dadoEscrito[*]  ; clk        ; 3.261 ; 3.261 ; Rise       ; clk             ;
+;  dadoEscrito[0] ; clk        ; 2.967 ; 2.967 ; Rise       ; clk             ;
+;  dadoEscrito[1] ; clk        ; 2.956 ; 2.956 ; Rise       ; clk             ;
+;  dadoEscrito[2] ; clk        ; 2.934 ; 2.934 ; Rise       ; clk             ;
+;  dadoEscrito[3] ; clk        ; 2.913 ; 2.913 ; Rise       ; clk             ;
+;  dadoEscrito[4] ; clk        ; 3.261 ; 3.261 ; Rise       ; clk             ;
+;  dadoEscrito[5] ; clk        ; 2.862 ; 2.862 ; Rise       ; clk             ;
+;  dadoEscrito[6] ; clk        ; 3.004 ; 3.004 ; Rise       ; clk             ;
+;  dadoEscrito[7] ; clk        ; 3.037 ; 3.037 ; Rise       ; clk             ;
+; label[*]        ; clk        ; 4.212 ; 4.212 ; Rise       ; clk             ;
+;  label[0]       ; clk        ; 3.557 ; 3.557 ; Rise       ; clk             ;
+;  label[1]       ; clk        ; 3.478 ; 3.478 ; Rise       ; clk             ;
+;  label[2]       ; clk        ; 1.451 ; 1.451 ; Rise       ; clk             ;
+;  label[3]       ; clk        ; 1.106 ; 1.106 ; Rise       ; clk             ;
+;  label[4]       ; clk        ; 3.146 ; 3.146 ; Rise       ; clk             ;
+;  label[5]       ; clk        ; 4.058 ; 4.058 ; Rise       ; clk             ;
+;  label[6]       ; clk        ; 4.212 ; 4.212 ; Rise       ; clk             ;
+;  label[7]       ; clk        ; 4.153 ; 4.153 ; Rise       ; clk             ;
+; reset           ; clk        ; 3.233 ; 3.233 ; Rise       ; clk             ;
+; LerMemo         ; clk        ; 2.428 ; 2.428 ; Fall       ; clk             ;
+; label[*]        ; clk        ; 3.596 ; 3.596 ; Fall       ; clk             ;
+;  label[0]       ; clk        ; 3.479 ; 3.479 ; Fall       ; clk             ;
+;  label[1]       ; clk        ; 3.596 ; 3.596 ; Fall       ; clk             ;
+;  label[2]       ; clk        ; 1.291 ; 1.291 ; Fall       ; clk             ;
+;  label[3]       ; clk        ; 1.177 ; 1.177 ; Fall       ; clk             ;
+;  label[4]       ; clk        ; 2.556 ; 2.556 ; Fall       ; clk             ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; EscrMemo        ; clk        ; -3.453 ; -3.453 ; Rise       ; clk             ;
+; dadoEscrito[*]  ; clk        ; -1.870 ; -1.870 ; Rise       ; clk             ;
+;  dadoEscrito[0] ; clk        ; -1.974 ; -1.974 ; Rise       ; clk             ;
+;  dadoEscrito[1] ; clk        ; -2.038 ; -2.038 ; Rise       ; clk             ;
+;  dadoEscrito[2] ; clk        ; -1.916 ; -1.916 ; Rise       ; clk             ;
+;  dadoEscrito[3] ; clk        ; -1.870 ; -1.870 ; Rise       ; clk             ;
+;  dadoEscrito[4] ; clk        ; -2.023 ; -2.023 ; Rise       ; clk             ;
+;  dadoEscrito[5] ; clk        ; -1.990 ; -1.990 ; Rise       ; clk             ;
+;  dadoEscrito[6] ; clk        ; -1.972 ; -1.972 ; Rise       ; clk             ;
+;  dadoEscrito[7] ; clk        ; -1.964 ; -1.964 ; Rise       ; clk             ;
+; label[*]        ; clk        ; 0.242  ; 0.242  ; Rise       ; clk             ;
+;  label[0]       ; clk        ; -2.527 ; -2.527 ; Rise       ; clk             ;
+;  label[1]       ; clk        ; -2.596 ; -2.596 ; Rise       ; clk             ;
+;  label[2]       ; clk        ; 0.242  ; 0.242  ; Rise       ; clk             ;
+;  label[3]       ; clk        ; -0.143 ; -0.143 ; Rise       ; clk             ;
+;  label[4]       ; clk        ; -2.292 ; -2.292 ; Rise       ; clk             ;
+;  label[5]       ; clk        ; -3.311 ; -3.311 ; Rise       ; clk             ;
+;  label[6]       ; clk        ; -3.465 ; -3.465 ; Rise       ; clk             ;
+;  label[7]       ; clk        ; -3.406 ; -3.406 ; Rise       ; clk             ;
+; reset           ; clk        ; -2.222 ; -2.222 ; Rise       ; clk             ;
+; LerMemo         ; clk        ; -2.174 ; -2.174 ; Fall       ; clk             ;
+; label[*]        ; clk        ; 0.271  ; 0.271  ; Fall       ; clk             ;
+;  label[0]       ; clk        ; -2.371 ; -2.371 ; Fall       ; clk             ;
+;  label[1]       ; clk        ; -2.483 ; -2.483 ; Fall       ; clk             ;
+;  label[2]       ; clk        ; 0.220  ; 0.220  ; Fall       ; clk             ;
+;  label[3]       ; clk        ; 0.271  ; 0.271  ; Fall       ; clk             ;
+;  label[4]       ; clk        ; -2.085 ; -2.085 ; Fall       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; escrever[*]  ; clk        ; 3.962 ; 3.962 ; Fall       ; clk             ;
+;  escrever[0] ; clk        ; 3.814 ; 3.814 ; Fall       ; clk             ;
+;  escrever[1] ; clk        ; 3.822 ; 3.822 ; Fall       ; clk             ;
+;  escrever[2] ; clk        ; 3.813 ; 3.813 ; Fall       ; clk             ;
+;  escrever[3] ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
+;  escrever[4] ; clk        ; 3.808 ; 3.808 ; Fall       ; clk             ;
+;  escrever[5] ; clk        ; 3.928 ; 3.928 ; Fall       ; clk             ;
+;  escrever[6] ; clk        ; 3.920 ; 3.920 ; Fall       ; clk             ;
+;  escrever[7] ; clk        ; 3.962 ; 3.962 ; Fall       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; escrever[*]  ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
+;  escrever[0] ; clk        ; 3.814 ; 3.814 ; Fall       ; clk             ;
+;  escrever[1] ; clk        ; 3.822 ; 3.822 ; Fall       ; clk             ;
+;  escrever[2] ; clk        ; 3.813 ; 3.813 ; Fall       ; clk             ;
+;  escrever[3] ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
+;  escrever[4] ; clk        ; 3.808 ; 3.808 ; Fall       ; clk             ;
+;  escrever[5] ; clk        ; 3.928 ; 3.928 ; Fall       ; clk             ;
+;  escrever[6] ; clk        ; 3.920 ; 3.920 ; Fall       ; clk             ;
+;  escrever[7] ; clk        ; 3.962 ; 3.962 ; Fall       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -3.208  ; 0.960 ; N/A      ; N/A     ; -1.380              ;
+;  clk             ; -3.208  ; 0.960 ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS  ; -23.766 ; 0.0   ; 0.0      ; 0.0     ; -249.38             ;
+;  clk             ; -23.766 ; 0.000 ; N/A      ; N/A     ; -249.380            ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------------+
+; Setup Times                                                                 ;
++-----------------+------------+-------+-------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------------+------------+-------+-------+------------+-----------------+
+; EscrMemo        ; clk        ; 8.407 ; 8.407 ; Rise       ; clk             ;
+; dadoEscrito[*]  ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
+;  dadoEscrito[0] ; clk        ; 5.846 ; 5.846 ; Rise       ; clk             ;
+;  dadoEscrito[1] ; clk        ; 5.845 ; 5.845 ; Rise       ; clk             ;
+;  dadoEscrito[2] ; clk        ; 5.839 ; 5.839 ; Rise       ; clk             ;
+;  dadoEscrito[3] ; clk        ; 5.710 ; 5.710 ; Rise       ; clk             ;
+;  dadoEscrito[4] ; clk        ; 6.370 ; 6.370 ; Rise       ; clk             ;
+;  dadoEscrito[5] ; clk        ; 5.525 ; 5.525 ; Rise       ; clk             ;
+;  dadoEscrito[6] ; clk        ; 5.902 ; 5.902 ; Rise       ; clk             ;
+;  dadoEscrito[7] ; clk        ; 5.889 ; 5.889 ; Rise       ; clk             ;
+; label[*]        ; clk        ; 8.354 ; 8.354 ; Rise       ; clk             ;
+;  label[0]       ; clk        ; 6.944 ; 6.944 ; Rise       ; clk             ;
+;  label[1]       ; clk        ; 6.720 ; 6.720 ; Rise       ; clk             ;
+;  label[2]       ; clk        ; 3.772 ; 3.772 ; Rise       ; clk             ;
+;  label[3]       ; clk        ; 2.989 ; 2.989 ; Rise       ; clk             ;
+;  label[4]       ; clk        ; 6.130 ; 6.130 ; Rise       ; clk             ;
+;  label[5]       ; clk        ; 8.093 ; 8.093 ; Rise       ; clk             ;
+;  label[6]       ; clk        ; 8.354 ; 8.354 ; Rise       ; clk             ;
+;  label[7]       ; clk        ; 8.265 ; 8.265 ; Rise       ; clk             ;
+; reset           ; clk        ; 6.237 ; 6.237 ; Rise       ; clk             ;
+; LerMemo         ; clk        ; 4.489 ; 4.489 ; Fall       ; clk             ;
+; label[*]        ; clk        ; 7.269 ; 7.269 ; Fall       ; clk             ;
+;  label[0]       ; clk        ; 7.059 ; 7.059 ; Fall       ; clk             ;
+;  label[1]       ; clk        ; 7.269 ; 7.269 ; Fall       ; clk             ;
+;  label[2]       ; clk        ; 3.611 ; 3.611 ; Fall       ; clk             ;
+;  label[3]       ; clk        ; 3.365 ; 3.365 ; Fall       ; clk             ;
+;  label[4]       ; clk        ; 4.893 ; 4.893 ; Fall       ; clk             ;
++-----------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Hold Times                                                                    ;
++-----------------+------------+--------+--------+------------+-----------------+
+; Data Port       ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------------+------------+--------+--------+------------+-----------------+
+; EscrMemo        ; clk        ; -3.453 ; -3.453 ; Rise       ; clk             ;
+; dadoEscrito[*]  ; clk        ; -1.870 ; -1.870 ; Rise       ; clk             ;
+;  dadoEscrito[0] ; clk        ; -1.974 ; -1.974 ; Rise       ; clk             ;
+;  dadoEscrito[1] ; clk        ; -2.038 ; -2.038 ; Rise       ; clk             ;
+;  dadoEscrito[2] ; clk        ; -1.916 ; -1.916 ; Rise       ; clk             ;
+;  dadoEscrito[3] ; clk        ; -1.870 ; -1.870 ; Rise       ; clk             ;
+;  dadoEscrito[4] ; clk        ; -2.023 ; -2.023 ; Rise       ; clk             ;
+;  dadoEscrito[5] ; clk        ; -1.990 ; -1.990 ; Rise       ; clk             ;
+;  dadoEscrito[6] ; clk        ; -1.972 ; -1.972 ; Rise       ; clk             ;
+;  dadoEscrito[7] ; clk        ; -1.964 ; -1.964 ; Rise       ; clk             ;
+; label[*]        ; clk        ; 0.242  ; 0.242  ; Rise       ; clk             ;
+;  label[0]       ; clk        ; -2.527 ; -2.527 ; Rise       ; clk             ;
+;  label[1]       ; clk        ; -2.596 ; -2.596 ; Rise       ; clk             ;
+;  label[2]       ; clk        ; 0.242  ; 0.242  ; Rise       ; clk             ;
+;  label[3]       ; clk        ; -0.143 ; -0.143 ; Rise       ; clk             ;
+;  label[4]       ; clk        ; -2.292 ; -2.292 ; Rise       ; clk             ;
+;  label[5]       ; clk        ; -3.311 ; -3.311 ; Rise       ; clk             ;
+;  label[6]       ; clk        ; -3.465 ; -3.465 ; Rise       ; clk             ;
+;  label[7]       ; clk        ; -3.406 ; -3.406 ; Rise       ; clk             ;
+; reset           ; clk        ; -2.222 ; -2.222 ; Rise       ; clk             ;
+; LerMemo         ; clk        ; -2.174 ; -2.174 ; Fall       ; clk             ;
+; label[*]        ; clk        ; 0.271  ; 0.271  ; Fall       ; clk             ;
+;  label[0]       ; clk        ; -2.371 ; -2.371 ; Fall       ; clk             ;
+;  label[1]       ; clk        ; -2.483 ; -2.483 ; Fall       ; clk             ;
+;  label[2]       ; clk        ; 0.220  ; 0.220  ; Fall       ; clk             ;
+;  label[3]       ; clk        ; 0.271  ; 0.271  ; Fall       ; clk             ;
+;  label[4]       ; clk        ; -2.085 ; -2.085 ; Fall       ; clk             ;
++-----------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Clock to Output Times                                                    ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; escrever[*]  ; clk        ; 7.001 ; 7.001 ; Fall       ; clk             ;
+;  escrever[0] ; clk        ; 6.696 ; 6.696 ; Fall       ; clk             ;
+;  escrever[1] ; clk        ; 6.695 ; 6.695 ; Fall       ; clk             ;
+;  escrever[2] ; clk        ; 6.685 ; 6.685 ; Fall       ; clk             ;
+;  escrever[3] ; clk        ; 6.692 ; 6.692 ; Fall       ; clk             ;
+;  escrever[4] ; clk        ; 6.701 ; 6.701 ; Fall       ; clk             ;
+;  escrever[5] ; clk        ; 6.959 ; 6.959 ; Fall       ; clk             ;
+;  escrever[6] ; clk        ; 6.942 ; 6.942 ; Fall       ; clk             ;
+;  escrever[7] ; clk        ; 7.001 ; 7.001 ; Fall       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                            ;
++--------------+------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+------------+-------+-------+------------+-----------------+
+; escrever[*]  ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
+;  escrever[0] ; clk        ; 3.814 ; 3.814 ; Fall       ; clk             ;
+;  escrever[1] ; clk        ; 3.822 ; 3.822 ; Fall       ; clk             ;
+;  escrever[2] ; clk        ; 3.813 ; 3.813 ; Fall       ; clk             ;
+;  escrever[3] ; clk        ; 3.804 ; 3.804 ; Fall       ; clk             ;
+;  escrever[4] ; clk        ; 3.808 ; 3.808 ; Fall       ; clk             ;
+;  escrever[5] ; clk        ; 3.928 ; 3.928 ; Fall       ; clk             ;
+;  escrever[6] ; clk        ; 3.920 ; 3.920 ; Fall       ; clk             ;
+;  escrever[7] ; clk        ; 3.962 ; 3.962 ; Fall       ; clk             ;
++--------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 0        ; 0        ; 240      ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 0        ; 0        ; 240      ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 19    ; 19   ;
+; Unconstrained Input Port Paths  ; 2680  ; 2680 ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 8     ; 8    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Mar 19 00:33:09 2021
+Info: Command: quartus_sta dados -c dados
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'dados.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.208
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -3.208       -23.766 clk 
+Info (332146): Worst-case hold slack is 1.450
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.450         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -249.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.165
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.165        -8.558 clk 
+Info (332146): Worst-case hold slack is 0.960
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.960         0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380      -249.380 clk 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4539 megabytes
+    Info: Processing ended: Fri Mar 19 00:33:13 2021
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+

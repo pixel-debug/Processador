@@ -1,0 +1,29 @@
+module ulaControl (ALUOp, FuncCode, ALUCtl);
+	input [1:0] ALUOp;		// opcode das funções
+	input [3:0] FuncCode;		// CODIGO DA FUNÇÃO
+	output reg[3:0]  ALUCtl;
+	
+	initial begin
+		
+		$display("Testando CONTROLE ULA...");
+		$monitor(" ALUOp = %b 	FuncCode = %b  ALUCtl = %b", ALUOp, FuncCode, ALUCtl);	
+		
+
+		end
+	
+		always@(*)
+			begin
+				case(ALUOp)
+					2'b10: ALUCtl<=5;			//branch (10)
+					2'b00: ALUCtl<=7;			// transferencia de dados (1)
+				default: case (FuncCode)	// tipo-R (0)
+					4'b1000: ALUCtl<=0; // cmpShort
+					4'b1010: ALUCtl<=2; // mov
+					4'b1101: ALUCtl<=5; //subtract	
+					4'b1111: ALUCtl<=7; // add
+					4'b1100:ALUCtl<=4; // inc
+					default: ALUCtl<=15; // should not happen
+				endcase
+			endcase
+	end
+endmodule

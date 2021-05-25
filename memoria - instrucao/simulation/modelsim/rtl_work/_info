@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\MEMORIA\simulation\modelsim
+vmemoria
+I`e5zEFZFHR32h354NO1470
+VW8HkzF6=SW3H=_5f`P3KB0
+Z1 dC:\marinaSD\PROCESSADOR\MEMORIA\simulation\modelsim
+w1616129300
+8C:/marinaSD/PROCESSADOR/MEMORIA/memoria.v
+FC:/marinaSD/PROCESSADOR/MEMORIA/memoria.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 ;];SaWWXWWn8PV:i923`H3
+!s85 0
+!s108 1616129436.233000
+!s107 C:/marinaSD/PROCESSADOR/MEMORIA/memoria.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/MEMORIA|C:/marinaSD/PROCESSADOR/MEMORIA/memoria.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/MEMORIA -O0
+vtest_memoria
+!i10b 1
+!s100 AjM=>TbI7^:KYR`f4ehKI1
+IH8@6J3i2`Q;]WPi8QoIPM1
+VV7hll`2kbaoNASJ`oH@OE3
+R1
+w1616121744
+8C:/marinaSD/PROCESSADOR/MEMORIA/test_memoria.v
+FC:/marinaSD/PROCESSADOR/MEMORIA/test_memoria.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1616129437.006000
+!s107 C:/marinaSD/PROCESSADOR/MEMORIA/test_memoria.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/MEMORIA|C:/marinaSD/PROCESSADOR/MEMORIA/test_memoria.v|
+!s101 -O0
+R3
+R4

@@ -1,0 +1,28 @@
+module controleUnit (instru, out, clk, reset);
+	input [7:0] instru;		
+	output reg[12:0]  out;
+	
+	initial begin
+		
+		$display("Testando CONTROLE ULA...");
+		$monitor(" ALUOp = %b 	FuncCode = %b  ALUCtl = %b", ALUOp, FuncCode, ALUCtl);	
+		
+
+		end
+	
+		always@(*)
+			begin
+				case(instru)
+					0: out<=5;			//escrita
+					1: out<=7;			// ulaFonte
+					2: out<=0; 			// ulaOP
+					3: out<=2; 			// pula
+					4: out<=5; 			// regFonte	
+					5: out<=7; 			// comparador
+					6: out<=4; 			// lerMemo
+					7: out<=0;			// escreveMemo
+					default: ALUCtl<=15; // should not happen
+				endcase
+			endcase
+	end
+endmodule

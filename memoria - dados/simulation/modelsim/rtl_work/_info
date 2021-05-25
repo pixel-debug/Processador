@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\Aula-8-Lab-AOC1_marina-bernardes-diniz\MEMORIA_DADOS\simulation\modelsim
+vmemoria_dados
+IiTd[b]kA;FAZ?kDKIK=0a0
+V]hWYlJFZk8BRfdTiVC3dz3
+Z1 dC:\marinaSD\PROCESSADOR\Aula-8-Lab-AOC1_marina-bernardes-diniz\MEMORIA_DADOS\simulation\modelsim
+w1617902616
+8C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS/memoria_dados.v
+FC:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS/memoria_dados.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 VU;@;LNQJLEP18Nn6mMCi0
+!s85 0
+!s108 1617902642.781000
+!s107 C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS/memoria_dados.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS|C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS/memoria_dados.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS -O0
+vtest_memoria_dados
+!i10b 1
+!s100 lfZn]1S_;<kcI4Yi@=SgQ2
+IHP]B>8<bfBc8C?g8?;K^>3
+V9D4U7RRY=U6?cFS1R9UPk1
+R1
+w1617902483
+8C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS/test_memoria_dados.v
+FC:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS/test_memoria_dados.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1617902644.387000
+!s107 C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS/test_memoria_dados.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS|C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/MEMORIA_DADOS/test_memoria_dados.v|
+!s101 -O0
+R3
+R4

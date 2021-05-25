@@ -1,0 +1,12 @@
+module ulaControl (ALUOp, FuncCode, ALUCtl);
+	input [1:0] ALUOp;		// opcode das funções
+	input [3:0] FuncCode;		// CODIGO DA FUNÇÃO
+	output [3:0] reg ALUCtl;
+		always case (FuncCode)
+			b'0000: ALUOp<=0; // cmpShort							
+			b'0101: ALUOp<=5; //subtract	
+			b'0111: ALUOp<=7; // add
+			b'1010: ALUOP<=2; // mov
+			default: ALUOp<=15; // should not happen
+	endcase
+endmodule

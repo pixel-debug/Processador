@@ -1,0 +1,38 @@
+|controleUnit
+instru[0] => Decoder0.IN7
+instru[1] => Decoder0.IN6
+instru[2] => Decoder0.IN5
+instru[3] => Decoder0.IN4
+instru[4] => Decoder0.IN3
+instru[5] => Decoder0.IN2
+instru[6] => Decoder0.IN1
+instru[7] => Decoder0.IN0
+clk => escritaPC.IN0
+clk => escreveMemo.IN1
+clk => lerMemo.IN1
+clk => comparador.IN1
+clk => regFonte.IN1
+clk => pula.IN1
+clk => ulaOP.IN1
+clk => ulaFonte.IN1
+clk => escrita.IN1
+reset => escreveMemo$latch.ACLR
+reset => lerMemo$latch.ACLR
+reset => comparador$latch.ACLR
+reset => regFonte$latch.ACLR
+reset => pula$latch.ACLR
+reset => ulaOP$latch.ACLR
+reset => ulaFonte$latch.ACLR
+reset => escrita$latch.ACLR
+reset => escritaPC.IN1
+escrita <= escrita$latch.DB_MAX_OUTPUT_PORT_TYPE
+escritaPC <= escritaPC$latch.DB_MAX_OUTPUT_PORT_TYPE
+ulaFonte <= ulaFonte$latch.DB_MAX_OUTPUT_PORT_TYPE
+ulaOP <= ulaOP$latch.DB_MAX_OUTPUT_PORT_TYPE
+pula <= pula$latch.DB_MAX_OUTPUT_PORT_TYPE
+regFonte <= regFonte$latch.DB_MAX_OUTPUT_PORT_TYPE
+comparador <= comparador$latch.DB_MAX_OUTPUT_PORT_TYPE
+lerMemo <= lerMemo$latch.DB_MAX_OUTPUT_PORT_TYPE
+escreveMemo <= escreveMemo$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

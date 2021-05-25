@@ -1,0 +1,19 @@
+|extensor
+in[0] => out[0].DATAIN
+in[1] => out[1].DATAIN
+in[2] => out[2].DATAIN
+in[2] => out[7].DATAIN
+in[2] => out[6].DATAIN
+in[2] => out[5].DATAIN
+in[2] => out[4].DATAIN
+in[2] => out[3].DATAIN
+out[0] <= in[0].DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= in[1].DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= in[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,45 @@
+|ula
+ALUctl[0] => Decoder0.IN3
+ALUctl[0] => Mux0.IN19
+ALUctl[0] => Mux1.IN18
+ALUctl[0] => Mux2.IN18
+ALUctl[1] => Decoder0.IN2
+ALUctl[1] => Mux0.IN18
+ALUctl[1] => Mux1.IN17
+ALUctl[1] => Mux2.IN17
+ALUctl[2] => Decoder0.IN1
+ALUctl[2] => Mux0.IN17
+ALUctl[2] => Mux1.IN16
+ALUctl[2] => Mux2.IN16
+ALUctl[3] => Decoder0.IN0
+ALUctl[3] => Mux0.IN16
+ALUctl[3] => Mux1.IN15
+ALUctl[3] => Mux2.IN15
+A[0] => LessThan0.IN2
+A[0] => Add0.IN4
+A[0] => Add1.IN4
+A[0] => Add2.IN2
+A[1] => LessThan0.IN1
+A[1] => Add0.IN3
+A[1] => Add1.IN3
+A[1] => Add2.IN1
+B[0] => LessThan0.IN4
+B[0] => Add2.IN4
+B[0] => Mux2.IN19
+B[0] => Add1.IN2
+B[1] => LessThan0.IN3
+B[1] => Add2.IN3
+B[1] => Mux1.IN19
+B[1] => Add1.IN1
+ALUOut[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+ALUOut[1] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+ALUOut[2] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+ALUOut[3] <= ALUOut.DB_MAX_OUTPUT_PORT_TYPE
+ALUOut[4] <= ALUOut.DB_MAX_OUTPUT_PORT_TYPE
+ALUOut[5] <= ALUOut.DB_MAX_OUTPUT_PORT_TYPE
+ALUOut[6] <= ALUOut.DB_MAX_OUTPUT_PORT_TYPE
+ALUOut[7] <= ALUOut.DB_MAX_OUTPUT_PORT_TYPE
+ALUOut[8] <= ALUOut.DB_MAX_OUTPUT_PORT_TYPE
+Zero <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\PC\simulation\modelsim
+vprogramCounter
+IzdnfEXKG=OB<Bf7:=J?2b2
+Va4^:1QgnHXl50:F1Ic9Uo2
+Z1 dC:\marinaSD\PROCESSADOR\PC\simulation\modelsim
+w1616129924
+8C:/marinaSD/PROCESSADOR/PC/pc.v
+FC:/marinaSD/PROCESSADOR/PC/pc.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+nprogram@counter
+!i10b 1
+!s100 ob:dm[NN><U]Pe6dP8]Io0
+!s85 0
+!s108 1616130079.408000
+!s107 C:/marinaSD/PROCESSADOR/PC/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/PC|C:/marinaSD/PROCESSADOR/PC/pc.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/PC -O0
+vtest_pc
+!i10b 1
+!s100 m5a4hKWkA<zS@_0d7j48c2
+I<mF0WIDH;QjP@MD2@bFOL1
+V?2:QLIJO0>A7ezES3mG7h2
+R1
+w1616128617
+8C:/marinaSD/PROCESSADOR/PC/test_pc.v
+FC:/marinaSD/PROCESSADOR/PC/test_pc.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1616130079.612000
+!s107 C:/marinaSD/PROCESSADOR/PC/test_pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/PC|C:/marinaSD/PROCESSADOR/PC/test_pc.v|
+!s101 -O0
+R3
+R4

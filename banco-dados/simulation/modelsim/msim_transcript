@@ -1,0 +1,44 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do dados_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/DADOS {C:/marinaSD/PROCESSADOR/DADOS/dados.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dados
+# 
+# Top level modules:
+# 	dados
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/DADOS {C:/marinaSD/PROCESSADOR/DADOS/test_dados.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_dados
+# 
+# Top level modules:
+# 	test_dados
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test_dados
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_dados 
+# Loading work.test_dados
+# Loading work.dados
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Endereco: 00000000 Dado: 10110000 EscMem: 1 
+# Endereco: 00000000 Dado: 00000000 EscMem: 1 
+# Endereco: 00000111 Dado: 00000000 EscMem: 1 
+# Endereco: 00000111 Dado: 00000000 EscMem: 0 
+# Break in NamedBeginStat stop_at at C:/marinaSD/PROCESSADOR/DADOS/test_dados.v line 10
+# Simulation Breakpoint: Break in NamedBeginStat stop_at at C:/marinaSD/PROCESSADOR/DADOS/test_dados.v line 10
+# MACRO ./dados_run_msim_rtl_verilog.do PAUSED at line 17

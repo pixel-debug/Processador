@@ -1,0 +1,15 @@
+module registradores (Read1,Read2,WriteData,RegWrite,Data1,Data2,clock);
+	input [1:0] Read1,Read2; // the register numbers to read or write
+	input [1:0] WriteData; // data to write
+	input RegWrite, // the write control
+				clock; // the clock to trigger write
+	output [1:0] Data1, Data2; // the register values read
+	reg [1:0] RF [1:0]; // 32 registers each 32 bits long
+	assign Data1 = RF[Read1];
+	assign Data2 = RF[Read2];
+	always begin
+// write the register with new value if Regwrite is high
+		@(posedge clock) if (RegWrite) RF[WriteReg] <=
+		WriteData;
+		end
+endmodule

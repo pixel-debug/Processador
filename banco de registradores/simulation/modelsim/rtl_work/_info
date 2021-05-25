@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\REGISTRADOR\simulation\modelsim
+vregistradores
+IdoW=A[`B`[42j4Qj7Vko:0
+V]S>@H7M_<Ni=YUE?U5ne83
+Z1 dC:\marinaSD\PROCESSADOR\REGISTRADOR\simulation\modelsim
+w1616119509
+8C:/marinaSD/PROCESSADOR/REGISTRADOR/registradores.v
+FC:/marinaSD/PROCESSADOR/REGISTRADOR/registradores.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 0C=zYWc]Ub7_bn07D2ieZ2
+!s85 0
+!s108 1616127071.177000
+!s107 C:/marinaSD/PROCESSADOR/REGISTRADOR/registradores.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/REGISTRADOR|C:/marinaSD/PROCESSADOR/REGISTRADOR/registradores.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/REGISTRADOR -O0
+vtest_registradores
+!i10b 1
+!s100 cWgZoab6EED]_EF_CmYAn2
+IC34MB73IlSEhKE8>PfWMe0
+V2RMNdjB;L>_=OQSd3U7EJ3
+R1
+w1616119557
+8C:/marinaSD/PROCESSADOR/REGISTRADOR/test_registradores.v
+FC:/marinaSD/PROCESSADOR/REGISTRADOR/test_registradores.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1616127071.518000
+!s107 C:/marinaSD/PROCESSADOR/REGISTRADOR/test_registradores.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/REGISTRADOR|C:/marinaSD/PROCESSADOR/REGISTRADOR/test_registradores.v|
+!s101 -O0
+R3
+R4

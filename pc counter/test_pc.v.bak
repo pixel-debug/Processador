@@ -1,0 +1,26 @@
+/*
+	***********************************************
+		Módulo de teste do bloco de PC
+	***********************************************
+*/
+
+
+module test_pc;
+	input[7:0] endereco;
+	input clock, in;
+	wire out;
+	initial begin
+		endereco = 0000;
+		#1endereco = 1000;
+		#1endereco = 1010;
+		
+	
+	end
+	initial begin
+		$monitor("Time = %0d endereco = %b instrucao=%b in = %b out = %b",
+					$time, endereco, instrucao, in, out);
+	end
+	
+	programCounter gate1(clock, endereco, 1, out);			// pc_in
+//	programCounter gate2(clock, endereco, 0, out);			// not pc_in
+endmodule

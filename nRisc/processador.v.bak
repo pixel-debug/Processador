@@ -1,0 +1,4 @@
+module processador(clock, reset);
+
+
+endmodule

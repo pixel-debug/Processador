@@ -1,0 +1,28 @@
+module test_mux();
+	reg [7:0] TB_a, TB_b;
+	reg TB_sinal;
+	wire [7:0] TB_out;
+	
+	mux gate(TB_a, TB_b, TB_out, TB_sinal);
+
+	initial begin: stop_at
+		#20 $stop;
+	end
+		
+	initial begin: Init
+		TB_sinal = 0;
+		TB_a = 8b'00000000;
+		TB_b = 8b'00000000;
+		
+	end
+	
+	always begin: main_process
+		#1 TB_sinal = 1;
+		#2 TB_a = 8b'00000001;
+		#2 TB_b = 8b'00000001;
+		#3 TB_sinal = 0;
+		end
+endmodule 
+	
+	
+	

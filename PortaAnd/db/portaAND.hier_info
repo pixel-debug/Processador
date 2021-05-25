@@ -1,0 +1,27 @@
+|portaAND
+x[0] => out.IN0
+x[1] => out.IN0
+x[2] => out.IN0
+x[3] => out.IN0
+x[4] => out.IN0
+x[5] => out.IN0
+x[6] => out.IN0
+x[7] => out.IN0
+y[0] => out.IN1
+y[1] => out.IN1
+y[2] => out.IN1
+y[3] => out.IN1
+y[4] => out.IN1
+y[5] => out.IN1
+y[6] => out.IN1
+y[7] => out.IN1
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

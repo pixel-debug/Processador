@@ -1,0 +1,32 @@
+|memoria
+label[0] => Memo.raddr_a[0].DATAA
+label[1] => Memo.raddr_a[1].DATAA
+label[2] => Memo.raddr_a[2].DATAA
+label[3] => Memo.raddr_a[3].DATAA
+label[4] => Memo.raddr_a[4].DATAA
+label[5] => ~NO_FANOUT~
+label[6] => ~NO_FANOUT~
+label[7] => ~NO_FANOUT~
+clk => instrucao[0]~reg0.CLK
+clk => instrucao[1]~reg0.CLK
+clk => instrucao[2]~reg0.CLK
+clk => instrucao[3]~reg0.CLK
+clk => instrucao[4]~reg0.CLK
+clk => instrucao[5]~reg0.CLK
+clk => instrucao[6]~reg0.CLK
+clk => instrucao[7]~reg0.CLK
+instrucao[0] <= instrucao[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[1] <= instrucao[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[2] <= instrucao[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[3] <= instrucao[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[4] <= instrucao[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[5] <= instrucao[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[6] <= instrucao[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+instrucao[7] <= instrucao[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+reset => Memo.raddr_a[4].OUTPUTSELECT
+reset => Memo.raddr_a[3].OUTPUTSELECT
+reset => Memo.raddr_a[2].OUTPUTSELECT
+reset => Memo.raddr_a[1].OUTPUTSELECT
+reset => Memo.raddr_a[0].OUTPUTSELECT
+
+

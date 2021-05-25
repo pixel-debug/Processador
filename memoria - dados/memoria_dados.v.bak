@@ -1,0 +1,30 @@
+module memoria_dados(endereco, escrever, dadoEscrito, clock, reset, LerMemo,EscrMemo);
+	input [7:0] endereco;
+	input wire clock, EscrMemo, LerMemo, reset;
+	input wire [7:0] dadoEscrito;
+	output reg[7:0] escrever;
+	reg [7:0] Memo[0:29];
+	integer i;
+	
+	
+	
+	initial begin
+		$readmemb("banco_de_memoria_dados.dat", Memo);
+		end
+	always @(negedge clock)
+		begin 
+			if(LerMemo)
+				begin
+					escrever <= Memo[endereco];
+				end
+		end
+		
+	always@(posedge clock)
+		begin	
+			if(EscrMemo)
+				begin
+					Memo[endereco] <= dadoEscrito;
+				end
+		end
+
+endmodule

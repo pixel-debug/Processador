@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\DADOS\simulation\modelsim
+vdados
+I=`d41C3SBlD_G]1ilT[La0
+V0^fKRc5D3B<9fbVb83X5W2
+Z1 dC:\marinaSD\PROCESSADOR\DADOS\simulation\modelsim
+w1616130425
+8C:/marinaSD/PROCESSADOR/DADOS/dados.v
+FC:/marinaSD/PROCESSADOR/DADOS/dados.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 ZY<Wh<cGDZdjF<M1?Ul8[0
+!s85 0
+!s108 1616130544.829000
+!s107 C:/marinaSD/PROCESSADOR/DADOS/dados.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/DADOS|C:/marinaSD/PROCESSADOR/DADOS/dados.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/DADOS -O0
+vtest_dados
+!i10b 1
+!s100 QD[QGTN?]F]B=9oO0OO3M3
+I=f4GzNkf;A0[38XdgATNe2
+Vl?_En2@UEQ8^?BDk@9CO[0
+R1
+w1616130530
+8C:/marinaSD/PROCESSADOR/DADOS/test_dados.v
+FC:/marinaSD/PROCESSADOR/DADOS/test_dados.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1616130545.038000
+!s107 C:/marinaSD/PROCESSADOR/DADOS/test_dados.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/DADOS|C:/marinaSD/PROCESSADOR/DADOS/test_dados.v|
+!s101 -O0
+R3
+R4

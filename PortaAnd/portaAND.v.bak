@@ -1,0 +1,7 @@
+module portaAND ( x, y, out); // declaração do nome do módulo AND
+	input[7:0] x, y; // entrada de dados - um bit
+	output reg[7:0] out; // saída de dados - um bit
+
+	assign out = x & y; // circuito AND utilizando a chamada assign em Verilog
+
+endmodule // 

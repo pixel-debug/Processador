@@ -1,0 +1,61 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do jumper_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper {C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/jumper.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module jumper
+# 
+# Top level modules:
+# 	jumper
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper {C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/test_jumper.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_jumper
+# 
+# Top level modules:
+# 	test_jumper
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test_jumper
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_jumper 
+# Loading work.test_jumper
+# Loading work.jumper
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Testando JUMPER ...
+#  Endereco = 00000000  saido = 00000000 
+#  Endereco = 00000001  saido = 00000100 
+#  Endereco = 00000010  saido = 00001000 
+#  Endereco = 00000011  saido = 00001100 
+#  Endereco = 00000100  saido = 00010000 
+#  Endereco = 00000101  saido = 00010100 
+#  Endereco = 00000110  saido = 00011000 
+#  Endereco = 00000111  saido = 00011100 
+#  Endereco = 00001000  saido = 00100000 
+#  Endereco = 00001001  saido = 00100100 
+#  Endereco = 00001010  saido = 00101000 
+#  Endereco = 00001011  saido = 00101100 
+#  Endereco = 00001100  saido = 00110000 
+#  Endereco = 00001101  saido = 00110100 
+#  Endereco = 00001110  saido = 00111000 
+#  Endereco = 00001111  saido = 00111100 
+#  Endereco = 00010000  saido = 01000000 
+#  Endereco = 00010001  saido = 01000100 
+#  Endereco = 00010010  saido = 01001000 
+#  Endereco = 00010011  saido = 01001100 
+# Break in NamedBeginStat stop_at at C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/test_jumper.v line 9
+# Simulation Breakpoint: Break in NamedBeginStat stop_at at C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/test_jumper.v line 9
+# MACRO ./jumper_run_msim_rtl_verilog.do PAUSED at line 17

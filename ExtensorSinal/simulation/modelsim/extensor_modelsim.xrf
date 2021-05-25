@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/extensor.v
+source_file = 1, C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/test_extensor.v
+source_file = 1, C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ExtensorSinal/db/extensor.cbx.xml
+design_name = extensor
+instance = comp, \entrada[0]~I , entrada[0], extensor, 1
+instance = comp, \entrada[1]~I , entrada[1], extensor, 1
+instance = comp, \entrada[2]~I , entrada[2], extensor, 1
+instance = comp, \saida[0]~I , saida[0], extensor, 1
+instance = comp, \saida[1]~I , saida[1], extensor, 1
+instance = comp, \saida[2]~I , saida[2], extensor, 1
+instance = comp, \saida[3]~I , saida[3], extensor, 1
+instance = comp, \saida[4]~I , saida[4], extensor, 1
+instance = comp, \saida[5]~I , saida[5], extensor, 1
+instance = comp, \saida[6]~I , saida[6], extensor, 1
+instance = comp, \saida[7]~I , saida[7], extensor, 1

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\Aula-9-Lab-AOC1_marina-bernardes-diniz\Mux21\simulation\modelsim
+vmux21
+IV4@mg`JTm>][IAZ32CM6A1
+V9IROfJN>h_50[4^n3:@_o2
+Z1 dC:\marinaSD\PROCESSADOR\Aula-9-Lab-AOC1_marina-bernardes-diniz\Mux21\simulation\modelsim
+w1617755049
+8C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21/mux21.v
+FC:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21/mux21.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 Fi[e=kcMNVB:Z>^LD1zlO3
+!s85 0
+!s108 1617755746.103000
+!s107 C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21/mux21.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21|C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21/mux21.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21 -O0
+vtest_mux
+!i10b 1
+!s100 o0TV[9eHhIXQLbf:A;B933
+ILUb^cS<88_k8B;bUOmWn<2
+VHGDz@FLY>j7a7lMGkcdKV2
+R1
+w1617755722
+8C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21/test_mux.v
+FC:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21/test_mux.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1617755746.255000
+!s107 C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21/test_mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21|C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Mux21/test_mux.v|
+!s101 -O0
+R3
+R4

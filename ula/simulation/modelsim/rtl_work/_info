@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\Aula-9-Lab-AOC1_marina-bernardes-diniz\ULA\simulation\modelsim
+vtest_ula
+!i10b 1
+!s100 kF@gYz7:Ojl`3967T0d[B1
+IiEcFKP1A<aUdRR`IjJG@a0
+VFB9j0MFhonWPXE427R39K0
+Z1 dC:\marinaSD\PROCESSADOR\Aula-9-Lab-AOC1_marina-bernardes-diniz\ULA\simulation\modelsim
+w1616622508
+8C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/test_ula.v
+FC:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/test_ula.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1616622582.823000
+!s107 C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/test_ula.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA|C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/test_ula.v|
+!s101 -O0
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA -O0
+vula
+Ia_QH;14Z^aA7jHeLcS1^R3
+Vk5O>ZP::c]^=D]_AHi[=j0
+R1
+w1616622511
+8C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/ula.v
+FC:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/ula.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 Ua@W]U5h7_]JWejANX``T3
+!s85 0
+!s108 1616622582.151000
+!s107 C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/ula.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA|C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/ULA/ula.v|
+!s101 -O0
+R4

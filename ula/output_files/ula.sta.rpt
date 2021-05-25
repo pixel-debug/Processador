@@ -1,0 +1,768 @@
+TimeQuest Timing Analyzer report for ula
+Wed Mar 24 18:49:06 2021
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Fast Model Setup Summary
+ 14. Fast Model Hold Summary
+ 15. Fast Model Recovery Summary
+ 16. Fast Model Removal Summary
+ 17. Fast Model Minimum Pulse Width Summary
+ 18. Propagation Delay
+ 19. Minimum Propagation Delay
+ 20. Multicorner Timing Analysis Summary
+ 21. Progagation Delay
+ 22. Minimum Progagation Delay
+ 23. Clock Transfers
+ 24. Report TCCS
+ 25. Report RSKM
+ 26. Unconstrained Paths
+ 27. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; ula                                                               ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+---------------------------
+; Slow Model Fmax Summary ;
+---------------------------
+No paths to report.
+
+
+----------------------------
+; Slow Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Slow Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A[0]       ; ALUOut[0]   ; 10.369 ; 10.617 ; 10.617 ; 10.369 ;
+; A[0]       ; ALUOut[1]   ; 10.420 ; 10.420 ; 10.420 ; 10.420 ;
+; A[0]       ; ALUOut[2]   ; 10.657 ; 9.998  ; 9.998  ; 10.657 ;
+; A[0]       ; ALUOut[3]   ;        ; 9.880  ; 9.880  ;        ;
+; A[0]       ; ALUOut[4]   ;        ; 9.900  ; 9.900  ;        ;
+; A[0]       ; ALUOut[5]   ;        ; 9.839  ; 9.839  ;        ;
+; A[0]       ; ALUOut[6]   ;        ; 9.839  ; 9.839  ;        ;
+; A[0]       ; ALUOut[7]   ;        ; 9.906  ; 9.906  ;        ;
+; A[0]       ; ALUOut[8]   ;        ; 9.849  ; 9.849  ;        ;
+; A[0]       ; Zero        ; 11.413 ; 11.197 ; 11.197 ; 11.413 ;
+; A[1]       ; ALUOut[0]   ; 10.771 ; 10.771 ; 10.771 ; 10.771 ;
+; A[1]       ; ALUOut[1]   ; 10.500 ; 10.500 ; 10.500 ; 10.500 ;
+; A[1]       ; ALUOut[2]   ; 10.262 ; 10.298 ; 10.298 ; 10.262 ;
+; A[1]       ; ALUOut[3]   ;        ; 10.180 ; 10.180 ;        ;
+; A[1]       ; ALUOut[4]   ;        ; 10.200 ; 10.200 ;        ;
+; A[1]       ; ALUOut[5]   ;        ; 10.139 ; 10.139 ;        ;
+; A[1]       ; ALUOut[6]   ;        ; 10.139 ; 10.139 ;        ;
+; A[1]       ; ALUOut[7]   ;        ; 10.206 ; 10.206 ;        ;
+; A[1]       ; ALUOut[8]   ;        ; 10.149 ; 10.149 ;        ;
+; A[1]       ; Zero        ; 11.567 ; 11.567 ; 11.567 ; 11.567 ;
+; ALUctl[0]  ; ALUOut[0]   ; 7.618  ; 7.618  ; 7.618  ; 7.618  ;
+; ALUctl[0]  ; ALUOut[1]   ; 6.285  ; 6.285  ; 6.285  ; 6.285  ;
+; ALUctl[0]  ; ALUOut[2]   ; 6.715  ; 6.715  ; 6.715  ; 6.715  ;
+; ALUctl[0]  ; ALUOut[3]   ; 7.483  ;        ;        ; 7.483  ;
+; ALUctl[0]  ; ALUOut[4]   ; 7.503  ;        ;        ; 7.503  ;
+; ALUctl[0]  ; ALUOut[5]   ; 7.442  ;        ;        ; 7.442  ;
+; ALUctl[0]  ; ALUOut[6]   ; 7.442  ;        ;        ; 7.442  ;
+; ALUctl[0]  ; ALUOut[7]   ; 7.509  ;        ;        ; 7.509  ;
+; ALUctl[0]  ; ALUOut[8]   ; 7.452  ;        ;        ; 7.452  ;
+; ALUctl[0]  ; Zero        ; 8.414  ; 8.414  ; 8.414  ; 8.414  ;
+; ALUctl[1]  ; ALUOut[0]   ; 7.411  ; 7.411  ; 7.411  ; 7.411  ;
+; ALUctl[1]  ; ALUOut[1]   ; 7.780  ; 8.017  ; 8.017  ; 7.780  ;
+; ALUctl[1]  ; ALUOut[2]   ; 7.614  ; 8.313  ; 8.313  ; 7.614  ;
+; ALUctl[1]  ; ALUOut[3]   ;        ; 6.388  ; 6.388  ;        ;
+; ALUctl[1]  ; ALUOut[4]   ;        ; 6.408  ; 6.408  ;        ;
+; ALUctl[1]  ; ALUOut[5]   ;        ; 6.347  ; 6.347  ;        ;
+; ALUctl[1]  ; ALUOut[6]   ;        ; 6.347  ; 6.347  ;        ;
+; ALUctl[1]  ; ALUOut[7]   ;        ; 6.414  ; 6.414  ;        ;
+; ALUctl[1]  ; ALUOut[8]   ;        ; 6.357  ; 6.357  ;        ;
+; ALUctl[1]  ; Zero        ; 8.853  ; 8.472  ; 8.472  ; 8.853  ;
+; ALUctl[2]  ; ALUOut[0]   ; 10.487 ; 10.487 ; 10.487 ; 10.487 ;
+; ALUctl[2]  ; ALUOut[1]   ; 10.280 ; 9.852  ; 9.852  ; 10.280 ;
+; ALUctl[2]  ; ALUOut[2]   ; 9.182  ;        ;        ; 9.182  ;
+; ALUctl[2]  ; ALUOut[3]   ; 10.342 ;        ;        ; 10.342 ;
+; ALUctl[2]  ; ALUOut[4]   ; 10.362 ;        ;        ; 10.362 ;
+; ALUctl[2]  ; ALUOut[5]   ; 10.301 ;        ;        ; 10.301 ;
+; ALUctl[2]  ; ALUOut[6]   ; 10.301 ;        ;        ; 10.301 ;
+; ALUctl[2]  ; ALUOut[7]   ; 10.368 ;        ;        ; 10.368 ;
+; ALUctl[2]  ; ALUOut[8]   ; 10.311 ;        ;        ; 10.311 ;
+; ALUctl[2]  ; Zero        ; 11.283 ; 11.283 ; 11.283 ; 11.283 ;
+; ALUctl[3]  ; ALUOut[0]   ;        ; 9.279  ; 9.279  ;        ;
+; ALUctl[3]  ; ALUOut[1]   ;        ; 9.958  ; 9.958  ;        ;
+; ALUctl[3]  ; ALUOut[2]   ;        ; 9.293  ; 9.293  ;        ;
+; ALUctl[3]  ; ALUOut[3]   ;        ; 10.454 ; 10.454 ;        ;
+; ALUctl[3]  ; ALUOut[4]   ;        ; 10.474 ; 10.474 ;        ;
+; ALUctl[3]  ; ALUOut[5]   ;        ; 10.413 ; 10.413 ;        ;
+; ALUctl[3]  ; ALUOut[6]   ;        ; 10.413 ; 10.413 ;        ;
+; ALUctl[3]  ; ALUOut[7]   ;        ; 10.480 ; 10.480 ;        ;
+; ALUctl[3]  ; ALUOut[8]   ;        ; 10.423 ; 10.423 ;        ;
+; ALUctl[3]  ; Zero        ; 10.986 ;        ;        ; 10.986 ;
+; B[0]       ; ALUOut[0]   ; 10.828 ; 10.549 ; 10.549 ; 10.828 ;
+; B[0]       ; ALUOut[1]   ; 10.013 ; 10.013 ; 10.013 ; 10.013 ;
+; B[0]       ; ALUOut[2]   ; 10.994 ;        ;        ; 10.994 ;
+; B[0]       ; ALUOut[3]   ; 10.244 ;        ;        ; 10.244 ;
+; B[0]       ; ALUOut[4]   ; 10.264 ;        ;        ; 10.264 ;
+; B[0]       ; ALUOut[5]   ; 10.203 ;        ;        ; 10.203 ;
+; B[0]       ; ALUOut[6]   ; 10.203 ;        ;        ; 10.203 ;
+; B[0]       ; ALUOut[7]   ; 10.270 ;        ;        ; 10.270 ;
+; B[0]       ; ALUOut[8]   ; 10.213 ;        ;        ; 10.213 ;
+; B[0]       ; Zero        ; 11.345 ; 11.624 ; 11.624 ; 11.345 ;
+; B[1]       ; ALUOut[0]   ; 10.756 ; 10.613 ; 10.613 ; 10.756 ;
+; B[1]       ; ALUOut[1]   ; 10.098 ; 10.098 ; 10.098 ; 10.098 ;
+; B[1]       ; ALUOut[2]   ; 10.142 ;        ;        ; 10.142 ;
+; B[1]       ; ALUOut[3]   ; 10.024 ;        ;        ; 10.024 ;
+; B[1]       ; ALUOut[4]   ; 10.044 ;        ;        ; 10.044 ;
+; B[1]       ; ALUOut[5]   ; 9.983  ;        ;        ; 9.983  ;
+; B[1]       ; ALUOut[6]   ; 9.983  ;        ;        ; 9.983  ;
+; B[1]       ; ALUOut[7]   ; 10.050 ;        ;        ; 10.050 ;
+; B[1]       ; ALUOut[8]   ; 9.993  ;        ;        ; 9.993  ;
+; B[1]       ; Zero        ; 11.409 ; 11.552 ; 11.552 ; 11.409 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A[0]       ; ALUOut[0]   ; 9.755  ; 9.755  ; 9.755  ; 9.755  ;
+; A[0]       ; ALUOut[1]   ; 10.283 ; 10.283 ; 10.283 ; 10.283 ;
+; A[0]       ; ALUOut[2]   ; 10.657 ; 9.998  ; 9.998  ; 10.657 ;
+; A[0]       ; ALUOut[3]   ;        ; 9.880  ; 9.880  ;        ;
+; A[0]       ; ALUOut[4]   ;        ; 9.900  ; 9.900  ;        ;
+; A[0]       ; ALUOut[5]   ;        ; 9.839  ; 9.839  ;        ;
+; A[0]       ; ALUOut[6]   ;        ; 9.839  ; 9.839  ;        ;
+; A[0]       ; ALUOut[7]   ;        ; 9.906  ; 9.906  ;        ;
+; A[0]       ; ALUOut[8]   ;        ; 9.849  ; 9.849  ;        ;
+; A[0]       ; Zero        ; 10.412 ; 10.551 ; 10.551 ; 10.412 ;
+; A[1]       ; ALUOut[0]   ; 10.771 ; 10.708 ; 10.708 ; 10.771 ;
+; A[1]       ; ALUOut[1]   ; 9.824  ; 9.824  ; 9.824  ; 9.824  ;
+; A[1]       ; ALUOut[2]   ; 10.262 ; 10.298 ; 10.298 ; 10.262 ;
+; A[1]       ; ALUOut[3]   ;        ; 10.180 ; 10.180 ;        ;
+; A[1]       ; ALUOut[4]   ;        ; 10.200 ; 10.200 ;        ;
+; A[1]       ; ALUOut[5]   ;        ; 10.139 ; 10.139 ;        ;
+; A[1]       ; ALUOut[6]   ;        ; 10.139 ; 10.139 ;        ;
+; A[1]       ; ALUOut[7]   ;        ; 10.206 ; 10.206 ;        ;
+; A[1]       ; ALUOut[8]   ;        ; 10.149 ; 10.149 ;        ;
+; A[1]       ; Zero        ; 10.516 ; 10.516 ; 10.516 ; 10.516 ;
+; ALUctl[0]  ; ALUOut[0]   ; 6.307  ; 6.307  ; 6.307  ; 6.307  ;
+; ALUctl[0]  ; ALUOut[1]   ; 6.285  ; 6.285  ; 6.285  ; 6.285  ;
+; ALUctl[0]  ; ALUOut[2]   ; 6.715  ; 6.715  ; 6.715  ; 6.715  ;
+; ALUctl[0]  ; ALUOut[3]   ; 7.483  ;        ;        ; 7.483  ;
+; ALUctl[0]  ; ALUOut[4]   ; 7.503  ;        ;        ; 7.503  ;
+; ALUctl[0]  ; ALUOut[5]   ; 7.442  ;        ;        ; 7.442  ;
+; ALUctl[0]  ; ALUOut[6]   ; 7.442  ;        ;        ; 7.442  ;
+; ALUctl[0]  ; ALUOut[7]   ; 7.509  ;        ;        ; 7.509  ;
+; ALUctl[0]  ; ALUOut[8]   ; 7.452  ;        ;        ; 7.452  ;
+; ALUctl[0]  ; Zero        ; 6.977  ; 6.977  ; 6.977  ; 6.977  ;
+; ALUctl[1]  ; ALUOut[0]   ; 7.411  ; 7.411  ; 7.411  ; 7.411  ;
+; ALUctl[1]  ; ALUOut[1]   ; 7.183  ; 7.780  ; 7.780  ; 7.183  ;
+; ALUctl[1]  ; ALUOut[2]   ; 6.936  ; 6.936  ; 6.936  ; 6.936  ;
+; ALUctl[1]  ; ALUOut[3]   ;        ; 6.388  ; 6.388  ;        ;
+; ALUctl[1]  ; ALUOut[4]   ;        ; 6.408  ; 6.408  ;        ;
+; ALUctl[1]  ; ALUOut[5]   ;        ; 6.347  ; 6.347  ;        ;
+; ALUctl[1]  ; ALUOut[6]   ;        ; 6.347  ; 6.347  ;        ;
+; ALUctl[1]  ; ALUOut[7]   ;        ; 6.414  ; 6.414  ;        ;
+; ALUctl[1]  ; ALUOut[8]   ;        ; 6.357  ; 6.357  ;        ;
+; ALUctl[1]  ; Zero        ; 6.920  ; 7.476  ; 7.476  ; 6.920  ;
+; ALUctl[2]  ; ALUOut[0]   ; 9.867  ; 9.867  ; 9.867  ; 9.867  ;
+; ALUctl[2]  ; ALUOut[1]   ; 9.877  ; 9.852  ; 9.852  ; 9.877  ;
+; ALUctl[2]  ; ALUOut[2]   ; 9.182  ;        ;        ; 9.182  ;
+; ALUctl[2]  ; ALUOut[3]   ; 10.342 ;        ;        ; 10.342 ;
+; ALUctl[2]  ; ALUOut[4]   ; 10.362 ;        ;        ; 10.362 ;
+; ALUctl[2]  ; ALUOut[5]   ; 10.301 ;        ;        ; 10.301 ;
+; ALUctl[2]  ; ALUOut[6]   ; 10.301 ;        ;        ; 10.301 ;
+; ALUctl[2]  ; ALUOut[7]   ; 10.368 ;        ;        ; 10.368 ;
+; ALUctl[2]  ; ALUOut[8]   ; 10.311 ;        ;        ; 10.311 ;
+; ALUctl[2]  ; Zero        ; 10.544 ; 9.722  ; 9.722  ; 10.544 ;
+; ALUctl[3]  ; ALUOut[0]   ;        ; 9.279  ; 9.279  ;        ;
+; ALUctl[3]  ; ALUOut[1]   ;        ; 9.256  ; 9.256  ;        ;
+; ALUctl[3]  ; ALUOut[2]   ;        ; 9.293  ; 9.293  ;        ;
+; ALUctl[3]  ; ALUOut[3]   ;        ; 10.454 ; 10.454 ;        ;
+; ALUctl[3]  ; ALUOut[4]   ;        ; 10.474 ; 10.474 ;        ;
+; ALUctl[3]  ; ALUOut[5]   ;        ; 10.413 ; 10.413 ;        ;
+; ALUctl[3]  ; ALUOut[6]   ;        ; 10.413 ; 10.413 ;        ;
+; ALUctl[3]  ; ALUOut[7]   ;        ; 10.480 ; 10.480 ;        ;
+; ALUctl[3]  ; ALUOut[8]   ;        ; 10.423 ; 10.423 ;        ;
+; ALUctl[3]  ; Zero        ; 9.833  ;        ;        ; 9.833  ;
+; B[0]       ; ALUOut[0]   ; 9.935  ; 9.935  ; 9.935  ; 9.935  ;
+; B[0]       ; ALUOut[1]   ; 10.013 ; 10.013 ; 10.013 ; 10.013 ;
+; B[0]       ; ALUOut[2]   ; 10.362 ;        ;        ; 10.362 ;
+; B[0]       ; ALUOut[3]   ; 10.244 ;        ;        ; 10.244 ;
+; B[0]       ; ALUOut[4]   ; 10.264 ;        ;        ; 10.264 ;
+; B[0]       ; ALUOut[5]   ; 10.203 ;        ;        ; 10.203 ;
+; B[0]       ; ALUOut[6]   ; 10.203 ;        ;        ; 10.203 ;
+; B[0]       ; ALUOut[7]   ; 10.270 ;        ;        ; 10.270 ;
+; B[0]       ; ALUOut[8]   ; 10.213 ;        ;        ; 10.213 ;
+; B[0]       ; Zero        ; 10.705 ; 10.705 ; 10.705 ; 10.705 ;
+; B[1]       ; ALUOut[0]   ; 10.613 ; 10.613 ; 10.613 ; 10.613 ;
+; B[1]       ; ALUOut[1]   ; 9.571  ; 10.098 ; 10.098 ; 9.571  ;
+; B[1]       ; ALUOut[2]   ; 10.000 ;        ;        ; 10.000 ;
+; B[1]       ; ALUOut[3]   ; 10.024 ;        ;        ; 10.024 ;
+; B[1]       ; ALUOut[4]   ; 10.044 ;        ;        ; 10.044 ;
+; B[1]       ; ALUOut[5]   ; 9.983  ;        ;        ; 9.983  ;
+; B[1]       ; ALUOut[6]   ; 9.983  ;        ;        ; 9.983  ;
+; B[1]       ; ALUOut[7]   ; 10.050 ;        ;        ; 10.050 ;
+; B[1]       ; ALUOut[8]   ; 9.993  ;        ;        ; 9.993  ;
+; B[1]       ; Zero        ; 10.790 ; 10.263 ; 10.263 ; 10.790 ;
++------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------
+; Fast Model Setup Summary ;
+----------------------------
+No paths to report.
+
+
+---------------------------
+; Fast Model Hold Summary ;
+---------------------------
+No paths to report.
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Fast Model Minimum Pulse Width Summary ;
+------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A[0]       ; ALUOut[0]   ; 5.641 ; 5.744 ; 5.744 ; 5.641 ;
+; A[0]       ; ALUOut[1]   ; 5.669 ; 5.669 ; 5.669 ; 5.669 ;
+; A[0]       ; ALUOut[2]   ; 5.783 ; 5.505 ; 5.505 ; 5.783 ;
+; A[0]       ; ALUOut[3]   ;       ; 5.476 ; 5.476 ;       ;
+; A[0]       ; ALUOut[4]   ;       ; 5.496 ; 5.496 ;       ;
+; A[0]       ; ALUOut[5]   ;       ; 5.437 ; 5.437 ;       ;
+; A[0]       ; ALUOut[6]   ;       ; 5.437 ; 5.437 ;       ;
+; A[0]       ; ALUOut[7]   ;       ; 5.501 ; 5.501 ;       ;
+; A[0]       ; ALUOut[8]   ;       ; 5.447 ; 5.447 ;       ;
+; A[0]       ; Zero        ; 6.111 ; 6.008 ; 6.008 ; 6.111 ;
+; A[1]       ; ALUOut[0]   ; 5.792 ; 5.792 ; 5.792 ; 5.792 ;
+; A[1]       ; ALUOut[1]   ; 5.698 ; 5.698 ; 5.698 ; 5.698 ;
+; A[1]       ; ALUOut[2]   ; 5.596 ; 5.602 ; 5.602 ; 5.596 ;
+; A[1]       ; ALUOut[3]   ;       ; 5.573 ; 5.573 ;       ;
+; A[1]       ; ALUOut[4]   ;       ; 5.593 ; 5.593 ;       ;
+; A[1]       ; ALUOut[5]   ;       ; 5.534 ; 5.534 ;       ;
+; A[1]       ; ALUOut[6]   ;       ; 5.534 ; 5.534 ;       ;
+; A[1]       ; ALUOut[7]   ;       ; 5.598 ; 5.598 ;       ;
+; A[1]       ; ALUOut[8]   ;       ; 5.544 ; 5.544 ;       ;
+; A[1]       ; Zero        ; 6.159 ; 6.159 ; 6.159 ; 6.159 ;
+; ALUctl[0]  ; ALUOut[0]   ; 3.817 ; 3.817 ; 3.817 ; 3.817 ;
+; ALUctl[0]  ; ALUOut[1]   ; 3.254 ; 3.254 ; 3.254 ; 3.254 ;
+; ALUctl[0]  ; ALUOut[2]   ; 3.447 ; 3.447 ; 3.447 ; 3.447 ;
+; ALUctl[0]  ; ALUOut[3]   ; 3.790 ;       ;       ; 3.790 ;
+; ALUctl[0]  ; ALUOut[4]   ; 3.810 ;       ;       ; 3.810 ;
+; ALUctl[0]  ; ALUOut[5]   ; 3.751 ;       ;       ; 3.751 ;
+; ALUctl[0]  ; ALUOut[6]   ; 3.751 ;       ;       ; 3.751 ;
+; ALUctl[0]  ; ALUOut[7]   ; 3.815 ;       ;       ; 3.815 ;
+; ALUctl[0]  ; ALUOut[8]   ; 3.761 ;       ;       ; 3.761 ;
+; ALUctl[0]  ; Zero        ; 4.184 ; 4.184 ; 4.184 ; 4.184 ;
+; ALUctl[1]  ; ALUOut[0]   ; 3.707 ; 3.707 ; 3.707 ; 3.707 ;
+; ALUctl[1]  ; ALUOut[1]   ; 3.876 ; 3.992 ; 3.992 ; 3.876 ;
+; ALUctl[1]  ; ALUOut[2]   ; 3.809 ; 4.100 ; 4.100 ; 3.809 ;
+; ALUctl[1]  ; ALUOut[3]   ;       ; 3.294 ; 3.294 ;       ;
+; ALUctl[1]  ; ALUOut[4]   ;       ; 3.314 ; 3.314 ;       ;
+; ALUctl[1]  ; ALUOut[5]   ;       ; 3.255 ; 3.255 ;       ;
+; ALUctl[1]  ; ALUOut[6]   ;       ; 3.255 ; 3.255 ;       ;
+; ALUctl[1]  ; ALUOut[7]   ;       ; 3.319 ; 3.319 ;       ;
+; ALUctl[1]  ; ALUOut[8]   ;       ; 3.265 ; 3.265 ;       ;
+; ALUctl[1]  ; Zero        ; 4.314 ; 4.160 ; 4.160 ; 4.314 ;
+; ALUctl[2]  ; ALUOut[0]   ; 5.693 ; 5.693 ; 5.693 ; 5.693 ;
+; ALUctl[2]  ; ALUOut[1]   ; 5.591 ; 5.417 ; 5.417 ; 5.591 ;
+; ALUctl[2]  ; ALUOut[2]   ; 5.157 ;       ;       ; 5.157 ;
+; ALUctl[2]  ; ALUOut[3]   ; 5.664 ;       ;       ; 5.664 ;
+; ALUctl[2]  ; ALUOut[4]   ; 5.684 ;       ;       ; 5.684 ;
+; ALUctl[2]  ; ALUOut[5]   ; 5.625 ;       ;       ; 5.625 ;
+; ALUctl[2]  ; ALUOut[6]   ; 5.625 ;       ;       ; 5.625 ;
+; ALUctl[2]  ; ALUOut[7]   ; 5.689 ;       ;       ; 5.689 ;
+; ALUctl[2]  ; ALUOut[8]   ; 5.635 ;       ;       ; 5.635 ;
+; ALUctl[2]  ; Zero        ; 6.060 ; 6.060 ; 6.060 ; 6.060 ;
+; ALUctl[3]  ; ALUOut[0]   ;       ; 5.152 ; 5.152 ;       ;
+; ALUctl[3]  ; ALUOut[1]   ;       ; 5.447 ; 5.447 ;       ;
+; ALUctl[3]  ; ALUOut[2]   ;       ; 5.175 ; 5.175 ;       ;
+; ALUctl[3]  ; ALUOut[3]   ;       ; 5.682 ; 5.682 ;       ;
+; ALUctl[3]  ; ALUOut[4]   ;       ; 5.702 ; 5.702 ;       ;
+; ALUctl[3]  ; ALUOut[5]   ;       ; 5.643 ; 5.643 ;       ;
+; ALUctl[3]  ; ALUOut[6]   ;       ; 5.643 ; 5.643 ;       ;
+; ALUctl[3]  ; ALUOut[7]   ;       ; 5.707 ; 5.707 ;       ;
+; ALUctl[3]  ; ALUOut[8]   ;       ; 5.653 ; 5.653 ;       ;
+; ALUctl[3]  ; Zero        ; 5.883 ;       ;       ; 5.883 ;
+; B[0]       ; ALUOut[0]   ; 5.837 ; 5.717 ; 5.717 ; 5.837 ;
+; B[0]       ; ALUOut[1]   ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; B[0]       ; ALUOut[2]   ; 5.926 ;       ;       ; 5.926 ;
+; B[0]       ; ALUOut[3]   ; 5.621 ;       ;       ; 5.621 ;
+; B[0]       ; ALUOut[4]   ; 5.641 ;       ;       ; 5.641 ;
+; B[0]       ; ALUOut[5]   ; 5.582 ;       ;       ; 5.582 ;
+; B[0]       ; ALUOut[6]   ; 5.582 ;       ;       ; 5.582 ;
+; B[0]       ; ALUOut[7]   ; 5.646 ;       ;       ; 5.646 ;
+; B[0]       ; ALUOut[8]   ; 5.592 ;       ;       ; 5.592 ;
+; B[0]       ; Zero        ; 6.084 ; 6.204 ; 6.204 ; 6.084 ;
+; B[1]       ; ALUOut[0]   ; 5.801 ; 5.733 ; 5.733 ; 5.801 ;
+; B[1]       ; ALUOut[1]   ; 5.524 ; 5.524 ; 5.524 ; 5.524 ;
+; B[1]       ; ALUOut[2]   ; 5.551 ;       ;       ; 5.551 ;
+; B[1]       ; ALUOut[3]   ; 5.522 ;       ;       ; 5.522 ;
+; B[1]       ; ALUOut[4]   ; 5.542 ;       ;       ; 5.542 ;
+; B[1]       ; ALUOut[5]   ; 5.483 ;       ;       ; 5.483 ;
+; B[1]       ; ALUOut[6]   ; 5.483 ;       ;       ; 5.483 ;
+; B[1]       ; ALUOut[7]   ; 5.547 ;       ;       ; 5.547 ;
+; B[1]       ; ALUOut[8]   ; 5.493 ;       ;       ; 5.493 ;
+; B[1]       ; Zero        ; 6.100 ; 6.168 ; 6.168 ; 6.100 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A[0]       ; ALUOut[0]   ; 5.387 ; 5.387 ; 5.387 ; 5.387 ;
+; A[0]       ; ALUOut[1]   ; 5.621 ; 5.621 ; 5.621 ; 5.621 ;
+; A[0]       ; ALUOut[2]   ; 5.783 ; 5.505 ; 5.505 ; 5.783 ;
+; A[0]       ; ALUOut[3]   ;       ; 5.476 ; 5.476 ;       ;
+; A[0]       ; ALUOut[4]   ;       ; 5.496 ; 5.496 ;       ;
+; A[0]       ; ALUOut[5]   ;       ; 5.437 ; 5.437 ;       ;
+; A[0]       ; ALUOut[6]   ;       ; 5.437 ; 5.437 ;       ;
+; A[0]       ; ALUOut[7]   ;       ; 5.501 ; 5.501 ;       ;
+; A[0]       ; ALUOut[8]   ;       ; 5.447 ; 5.447 ;       ;
+; A[0]       ; Zero        ; 5.677 ; 5.754 ; 5.754 ; 5.677 ;
+; A[1]       ; ALUOut[0]   ; 5.792 ; 5.778 ; 5.778 ; 5.792 ;
+; A[1]       ; ALUOut[1]   ; 5.415 ; 5.415 ; 5.415 ; 5.415 ;
+; A[1]       ; ALUOut[2]   ; 5.596 ; 5.602 ; 5.602 ; 5.596 ;
+; A[1]       ; ALUOut[3]   ;       ; 5.573 ; 5.573 ;       ;
+; A[1]       ; ALUOut[4]   ;       ; 5.593 ; 5.593 ;       ;
+; A[1]       ; ALUOut[5]   ;       ; 5.534 ; 5.534 ;       ;
+; A[1]       ; ALUOut[6]   ;       ; 5.534 ; 5.534 ;       ;
+; A[1]       ; ALUOut[7]   ;       ; 5.598 ; 5.598 ;       ;
+; A[1]       ; ALUOut[8]   ;       ; 5.544 ; 5.544 ;       ;
+; A[1]       ; Zero        ; 5.699 ; 5.699 ; 5.699 ; 5.699 ;
+; ALUctl[0]  ; ALUOut[0]   ; 3.260 ; 3.260 ; 3.260 ; 3.260 ;
+; ALUctl[0]  ; ALUOut[1]   ; 3.254 ; 3.254 ; 3.254 ; 3.254 ;
+; ALUctl[0]  ; ALUOut[2]   ; 3.447 ; 3.447 ; 3.447 ; 3.447 ;
+; ALUctl[0]  ; ALUOut[3]   ; 3.790 ;       ;       ; 3.790 ;
+; ALUctl[0]  ; ALUOut[4]   ; 3.810 ;       ;       ; 3.810 ;
+; ALUctl[0]  ; ALUOut[5]   ; 3.751 ;       ;       ; 3.751 ;
+; ALUctl[0]  ; ALUOut[6]   ; 3.751 ;       ;       ; 3.751 ;
+; ALUctl[0]  ; ALUOut[7]   ; 3.815 ;       ;       ; 3.815 ;
+; ALUctl[0]  ; ALUOut[8]   ; 3.761 ;       ;       ; 3.761 ;
+; ALUctl[0]  ; Zero        ; 3.538 ; 3.538 ; 3.538 ; 3.538 ;
+; ALUctl[1]  ; ALUOut[0]   ; 3.707 ; 3.707 ; 3.707 ; 3.707 ;
+; ALUctl[1]  ; ALUOut[1]   ; 3.621 ; 3.876 ; 3.876 ; 3.621 ;
+; ALUctl[1]  ; ALUOut[2]   ; 3.521 ; 3.521 ; 3.521 ; 3.521 ;
+; ALUctl[1]  ; ALUOut[3]   ;       ; 3.294 ; 3.294 ;       ;
+; ALUctl[1]  ; ALUOut[4]   ;       ; 3.314 ; 3.314 ;       ;
+; ALUctl[1]  ; ALUOut[5]   ;       ; 3.255 ; 3.255 ;       ;
+; ALUctl[1]  ; ALUOut[6]   ;       ; 3.255 ; 3.255 ;       ;
+; ALUctl[1]  ; ALUOut[7]   ;       ; 3.319 ; 3.319 ;       ;
+; ALUctl[1]  ; ALUOut[8]   ;       ; 3.265 ; 3.265 ;       ;
+; ALUctl[1]  ; Zero        ; 3.495 ; 3.735 ; 3.735 ; 3.495 ;
+; ALUctl[2]  ; ALUOut[0]   ; 5.439 ; 5.439 ; 5.439 ; 5.439 ;
+; ALUctl[2]  ; ALUOut[1]   ; 5.432 ; 5.417 ; 5.417 ; 5.432 ;
+; ALUctl[2]  ; ALUOut[2]   ; 5.157 ;       ;       ; 5.157 ;
+; ALUctl[2]  ; ALUOut[3]   ; 5.664 ;       ;       ; 5.664 ;
+; ALUctl[2]  ; ALUOut[4]   ; 5.684 ;       ;       ; 5.684 ;
+; ALUctl[2]  ; ALUOut[5]   ; 5.625 ;       ;       ; 5.625 ;
+; ALUctl[2]  ; ALUOut[6]   ; 5.625 ;       ;       ; 5.625 ;
+; ALUctl[2]  ; ALUOut[7]   ; 5.689 ;       ;       ; 5.689 ;
+; ALUctl[2]  ; ALUOut[8]   ; 5.635 ;       ;       ; 5.635 ;
+; ALUctl[2]  ; Zero        ; 5.701 ; 5.371 ; 5.371 ; 5.701 ;
+; ALUctl[3]  ; ALUOut[0]   ;       ; 5.152 ; 5.152 ;       ;
+; ALUctl[3]  ; ALUOut[1]   ;       ; 5.148 ; 5.148 ;       ;
+; ALUctl[3]  ; ALUOut[2]   ;       ; 5.175 ; 5.175 ;       ;
+; ALUctl[3]  ; ALUOut[3]   ;       ; 5.682 ; 5.682 ;       ;
+; ALUctl[3]  ; ALUOut[4]   ;       ; 5.702 ; 5.702 ;       ;
+; ALUctl[3]  ; ALUOut[5]   ;       ; 5.643 ; 5.643 ;       ;
+; ALUctl[3]  ; ALUOut[6]   ;       ; 5.643 ; 5.643 ;       ;
+; ALUctl[3]  ; ALUOut[7]   ;       ; 5.707 ; 5.707 ;       ;
+; ALUctl[3]  ; ALUOut[8]   ;       ; 5.653 ; 5.653 ;       ;
+; ALUctl[3]  ; Zero        ; 5.389 ;       ;       ; 5.389 ;
+; B[0]       ; ALUOut[0]   ; 5.463 ; 5.463 ; 5.463 ; 5.463 ;
+; B[0]       ; ALUOut[1]   ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; B[0]       ; ALUOut[2]   ; 5.650 ;       ;       ; 5.650 ;
+; B[0]       ; ALUOut[3]   ; 5.621 ;       ;       ; 5.621 ;
+; B[0]       ; ALUOut[4]   ; 5.641 ;       ;       ; 5.641 ;
+; B[0]       ; ALUOut[5]   ; 5.582 ;       ;       ; 5.582 ;
+; B[0]       ; ALUOut[6]   ; 5.582 ;       ;       ; 5.582 ;
+; B[0]       ; ALUOut[7]   ; 5.646 ;       ;       ; 5.646 ;
+; B[0]       ; ALUOut[8]   ; 5.592 ;       ;       ; 5.592 ;
+; B[0]       ; Zero        ; 5.783 ; 5.783 ; 5.783 ; 5.783 ;
+; B[1]       ; ALUOut[0]   ; 5.733 ; 5.733 ; 5.733 ; 5.733 ;
+; B[1]       ; ALUOut[1]   ; 5.300 ; 5.524 ; 5.524 ; 5.300 ;
+; B[1]       ; ALUOut[2]   ; 5.489 ;       ;       ; 5.489 ;
+; B[1]       ; ALUOut[3]   ; 5.522 ;       ;       ; 5.522 ;
+; B[1]       ; ALUOut[4]   ; 5.542 ;       ;       ; 5.542 ;
+; B[1]       ; ALUOut[5]   ; 5.483 ;       ;       ; 5.483 ;
+; B[1]       ; ALUOut[6]   ; 5.483 ;       ;       ; 5.483 ;
+; B[1]       ; ALUOut[7]   ; 5.547 ;       ;       ; 5.547 ;
+; B[1]       ; ALUOut[8]   ; 5.493 ;       ;       ; 5.493 ;
+; B[1]       ; Zero        ; 5.808 ; 5.584 ; 5.584 ; 5.808 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A[0]       ; ALUOut[0]   ; 10.369 ; 10.617 ; 10.617 ; 10.369 ;
+; A[0]       ; ALUOut[1]   ; 10.420 ; 10.420 ; 10.420 ; 10.420 ;
+; A[0]       ; ALUOut[2]   ; 10.657 ; 9.998  ; 9.998  ; 10.657 ;
+; A[0]       ; ALUOut[3]   ;        ; 9.880  ; 9.880  ;        ;
+; A[0]       ; ALUOut[4]   ;        ; 9.900  ; 9.900  ;        ;
+; A[0]       ; ALUOut[5]   ;        ; 9.839  ; 9.839  ;        ;
+; A[0]       ; ALUOut[6]   ;        ; 9.839  ; 9.839  ;        ;
+; A[0]       ; ALUOut[7]   ;        ; 9.906  ; 9.906  ;        ;
+; A[0]       ; ALUOut[8]   ;        ; 9.849  ; 9.849  ;        ;
+; A[0]       ; Zero        ; 11.413 ; 11.197 ; 11.197 ; 11.413 ;
+; A[1]       ; ALUOut[0]   ; 10.771 ; 10.771 ; 10.771 ; 10.771 ;
+; A[1]       ; ALUOut[1]   ; 10.500 ; 10.500 ; 10.500 ; 10.500 ;
+; A[1]       ; ALUOut[2]   ; 10.262 ; 10.298 ; 10.298 ; 10.262 ;
+; A[1]       ; ALUOut[3]   ;        ; 10.180 ; 10.180 ;        ;
+; A[1]       ; ALUOut[4]   ;        ; 10.200 ; 10.200 ;        ;
+; A[1]       ; ALUOut[5]   ;        ; 10.139 ; 10.139 ;        ;
+; A[1]       ; ALUOut[6]   ;        ; 10.139 ; 10.139 ;        ;
+; A[1]       ; ALUOut[7]   ;        ; 10.206 ; 10.206 ;        ;
+; A[1]       ; ALUOut[8]   ;        ; 10.149 ; 10.149 ;        ;
+; A[1]       ; Zero        ; 11.567 ; 11.567 ; 11.567 ; 11.567 ;
+; ALUctl[0]  ; ALUOut[0]   ; 7.618  ; 7.618  ; 7.618  ; 7.618  ;
+; ALUctl[0]  ; ALUOut[1]   ; 6.285  ; 6.285  ; 6.285  ; 6.285  ;
+; ALUctl[0]  ; ALUOut[2]   ; 6.715  ; 6.715  ; 6.715  ; 6.715  ;
+; ALUctl[0]  ; ALUOut[3]   ; 7.483  ;        ;        ; 7.483  ;
+; ALUctl[0]  ; ALUOut[4]   ; 7.503  ;        ;        ; 7.503  ;
+; ALUctl[0]  ; ALUOut[5]   ; 7.442  ;        ;        ; 7.442  ;
+; ALUctl[0]  ; ALUOut[6]   ; 7.442  ;        ;        ; 7.442  ;
+; ALUctl[0]  ; ALUOut[7]   ; 7.509  ;        ;        ; 7.509  ;
+; ALUctl[0]  ; ALUOut[8]   ; 7.452  ;        ;        ; 7.452  ;
+; ALUctl[0]  ; Zero        ; 8.414  ; 8.414  ; 8.414  ; 8.414  ;
+; ALUctl[1]  ; ALUOut[0]   ; 7.411  ; 7.411  ; 7.411  ; 7.411  ;
+; ALUctl[1]  ; ALUOut[1]   ; 7.780  ; 8.017  ; 8.017  ; 7.780  ;
+; ALUctl[1]  ; ALUOut[2]   ; 7.614  ; 8.313  ; 8.313  ; 7.614  ;
+; ALUctl[1]  ; ALUOut[3]   ;        ; 6.388  ; 6.388  ;        ;
+; ALUctl[1]  ; ALUOut[4]   ;        ; 6.408  ; 6.408  ;        ;
+; ALUctl[1]  ; ALUOut[5]   ;        ; 6.347  ; 6.347  ;        ;
+; ALUctl[1]  ; ALUOut[6]   ;        ; 6.347  ; 6.347  ;        ;
+; ALUctl[1]  ; ALUOut[7]   ;        ; 6.414  ; 6.414  ;        ;
+; ALUctl[1]  ; ALUOut[8]   ;        ; 6.357  ; 6.357  ;        ;
+; ALUctl[1]  ; Zero        ; 8.853  ; 8.472  ; 8.472  ; 8.853  ;
+; ALUctl[2]  ; ALUOut[0]   ; 10.487 ; 10.487 ; 10.487 ; 10.487 ;
+; ALUctl[2]  ; ALUOut[1]   ; 10.280 ; 9.852  ; 9.852  ; 10.280 ;
+; ALUctl[2]  ; ALUOut[2]   ; 9.182  ;        ;        ; 9.182  ;
+; ALUctl[2]  ; ALUOut[3]   ; 10.342 ;        ;        ; 10.342 ;
+; ALUctl[2]  ; ALUOut[4]   ; 10.362 ;        ;        ; 10.362 ;
+; ALUctl[2]  ; ALUOut[5]   ; 10.301 ;        ;        ; 10.301 ;
+; ALUctl[2]  ; ALUOut[6]   ; 10.301 ;        ;        ; 10.301 ;
+; ALUctl[2]  ; ALUOut[7]   ; 10.368 ;        ;        ; 10.368 ;
+; ALUctl[2]  ; ALUOut[8]   ; 10.311 ;        ;        ; 10.311 ;
+; ALUctl[2]  ; Zero        ; 11.283 ; 11.283 ; 11.283 ; 11.283 ;
+; ALUctl[3]  ; ALUOut[0]   ;        ; 9.279  ; 9.279  ;        ;
+; ALUctl[3]  ; ALUOut[1]   ;        ; 9.958  ; 9.958  ;        ;
+; ALUctl[3]  ; ALUOut[2]   ;        ; 9.293  ; 9.293  ;        ;
+; ALUctl[3]  ; ALUOut[3]   ;        ; 10.454 ; 10.454 ;        ;
+; ALUctl[3]  ; ALUOut[4]   ;        ; 10.474 ; 10.474 ;        ;
+; ALUctl[3]  ; ALUOut[5]   ;        ; 10.413 ; 10.413 ;        ;
+; ALUctl[3]  ; ALUOut[6]   ;        ; 10.413 ; 10.413 ;        ;
+; ALUctl[3]  ; ALUOut[7]   ;        ; 10.480 ; 10.480 ;        ;
+; ALUctl[3]  ; ALUOut[8]   ;        ; 10.423 ; 10.423 ;        ;
+; ALUctl[3]  ; Zero        ; 10.986 ;        ;        ; 10.986 ;
+; B[0]       ; ALUOut[0]   ; 10.828 ; 10.549 ; 10.549 ; 10.828 ;
+; B[0]       ; ALUOut[1]   ; 10.013 ; 10.013 ; 10.013 ; 10.013 ;
+; B[0]       ; ALUOut[2]   ; 10.994 ;        ;        ; 10.994 ;
+; B[0]       ; ALUOut[3]   ; 10.244 ;        ;        ; 10.244 ;
+; B[0]       ; ALUOut[4]   ; 10.264 ;        ;        ; 10.264 ;
+; B[0]       ; ALUOut[5]   ; 10.203 ;        ;        ; 10.203 ;
+; B[0]       ; ALUOut[6]   ; 10.203 ;        ;        ; 10.203 ;
+; B[0]       ; ALUOut[7]   ; 10.270 ;        ;        ; 10.270 ;
+; B[0]       ; ALUOut[8]   ; 10.213 ;        ;        ; 10.213 ;
+; B[0]       ; Zero        ; 11.345 ; 11.624 ; 11.624 ; 11.345 ;
+; B[1]       ; ALUOut[0]   ; 10.756 ; 10.613 ; 10.613 ; 10.756 ;
+; B[1]       ; ALUOut[1]   ; 10.098 ; 10.098 ; 10.098 ; 10.098 ;
+; B[1]       ; ALUOut[2]   ; 10.142 ;        ;        ; 10.142 ;
+; B[1]       ; ALUOut[3]   ; 10.024 ;        ;        ; 10.024 ;
+; B[1]       ; ALUOut[4]   ; 10.044 ;        ;        ; 10.044 ;
+; B[1]       ; ALUOut[5]   ; 9.983  ;        ;        ; 9.983  ;
+; B[1]       ; ALUOut[6]   ; 9.983  ;        ;        ; 9.983  ;
+; B[1]       ; ALUOut[7]   ; 10.050 ;        ;        ; 10.050 ;
+; B[1]       ; ALUOut[8]   ; 9.993  ;        ;        ; 9.993  ;
+; B[1]       ; Zero        ; 11.409 ; 11.552 ; 11.552 ; 11.409 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Progagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A[0]       ; ALUOut[0]   ; 5.387 ; 5.387 ; 5.387 ; 5.387 ;
+; A[0]       ; ALUOut[1]   ; 5.621 ; 5.621 ; 5.621 ; 5.621 ;
+; A[0]       ; ALUOut[2]   ; 5.783 ; 5.505 ; 5.505 ; 5.783 ;
+; A[0]       ; ALUOut[3]   ;       ; 5.476 ; 5.476 ;       ;
+; A[0]       ; ALUOut[4]   ;       ; 5.496 ; 5.496 ;       ;
+; A[0]       ; ALUOut[5]   ;       ; 5.437 ; 5.437 ;       ;
+; A[0]       ; ALUOut[6]   ;       ; 5.437 ; 5.437 ;       ;
+; A[0]       ; ALUOut[7]   ;       ; 5.501 ; 5.501 ;       ;
+; A[0]       ; ALUOut[8]   ;       ; 5.447 ; 5.447 ;       ;
+; A[0]       ; Zero        ; 5.677 ; 5.754 ; 5.754 ; 5.677 ;
+; A[1]       ; ALUOut[0]   ; 5.792 ; 5.778 ; 5.778 ; 5.792 ;
+; A[1]       ; ALUOut[1]   ; 5.415 ; 5.415 ; 5.415 ; 5.415 ;
+; A[1]       ; ALUOut[2]   ; 5.596 ; 5.602 ; 5.602 ; 5.596 ;
+; A[1]       ; ALUOut[3]   ;       ; 5.573 ; 5.573 ;       ;
+; A[1]       ; ALUOut[4]   ;       ; 5.593 ; 5.593 ;       ;
+; A[1]       ; ALUOut[5]   ;       ; 5.534 ; 5.534 ;       ;
+; A[1]       ; ALUOut[6]   ;       ; 5.534 ; 5.534 ;       ;
+; A[1]       ; ALUOut[7]   ;       ; 5.598 ; 5.598 ;       ;
+; A[1]       ; ALUOut[8]   ;       ; 5.544 ; 5.544 ;       ;
+; A[1]       ; Zero        ; 5.699 ; 5.699 ; 5.699 ; 5.699 ;
+; ALUctl[0]  ; ALUOut[0]   ; 3.260 ; 3.260 ; 3.260 ; 3.260 ;
+; ALUctl[0]  ; ALUOut[1]   ; 3.254 ; 3.254 ; 3.254 ; 3.254 ;
+; ALUctl[0]  ; ALUOut[2]   ; 3.447 ; 3.447 ; 3.447 ; 3.447 ;
+; ALUctl[0]  ; ALUOut[3]   ; 3.790 ;       ;       ; 3.790 ;
+; ALUctl[0]  ; ALUOut[4]   ; 3.810 ;       ;       ; 3.810 ;
+; ALUctl[0]  ; ALUOut[5]   ; 3.751 ;       ;       ; 3.751 ;
+; ALUctl[0]  ; ALUOut[6]   ; 3.751 ;       ;       ; 3.751 ;
+; ALUctl[0]  ; ALUOut[7]   ; 3.815 ;       ;       ; 3.815 ;
+; ALUctl[0]  ; ALUOut[8]   ; 3.761 ;       ;       ; 3.761 ;
+; ALUctl[0]  ; Zero        ; 3.538 ; 3.538 ; 3.538 ; 3.538 ;
+; ALUctl[1]  ; ALUOut[0]   ; 3.707 ; 3.707 ; 3.707 ; 3.707 ;
+; ALUctl[1]  ; ALUOut[1]   ; 3.621 ; 3.876 ; 3.876 ; 3.621 ;
+; ALUctl[1]  ; ALUOut[2]   ; 3.521 ; 3.521 ; 3.521 ; 3.521 ;
+; ALUctl[1]  ; ALUOut[3]   ;       ; 3.294 ; 3.294 ;       ;
+; ALUctl[1]  ; ALUOut[4]   ;       ; 3.314 ; 3.314 ;       ;
+; ALUctl[1]  ; ALUOut[5]   ;       ; 3.255 ; 3.255 ;       ;
+; ALUctl[1]  ; ALUOut[6]   ;       ; 3.255 ; 3.255 ;       ;
+; ALUctl[1]  ; ALUOut[7]   ;       ; 3.319 ; 3.319 ;       ;
+; ALUctl[1]  ; ALUOut[8]   ;       ; 3.265 ; 3.265 ;       ;
+; ALUctl[1]  ; Zero        ; 3.495 ; 3.735 ; 3.735 ; 3.495 ;
+; ALUctl[2]  ; ALUOut[0]   ; 5.439 ; 5.439 ; 5.439 ; 5.439 ;
+; ALUctl[2]  ; ALUOut[1]   ; 5.432 ; 5.417 ; 5.417 ; 5.432 ;
+; ALUctl[2]  ; ALUOut[2]   ; 5.157 ;       ;       ; 5.157 ;
+; ALUctl[2]  ; ALUOut[3]   ; 5.664 ;       ;       ; 5.664 ;
+; ALUctl[2]  ; ALUOut[4]   ; 5.684 ;       ;       ; 5.684 ;
+; ALUctl[2]  ; ALUOut[5]   ; 5.625 ;       ;       ; 5.625 ;
+; ALUctl[2]  ; ALUOut[6]   ; 5.625 ;       ;       ; 5.625 ;
+; ALUctl[2]  ; ALUOut[7]   ; 5.689 ;       ;       ; 5.689 ;
+; ALUctl[2]  ; ALUOut[8]   ; 5.635 ;       ;       ; 5.635 ;
+; ALUctl[2]  ; Zero        ; 5.701 ; 5.371 ; 5.371 ; 5.701 ;
+; ALUctl[3]  ; ALUOut[0]   ;       ; 5.152 ; 5.152 ;       ;
+; ALUctl[3]  ; ALUOut[1]   ;       ; 5.148 ; 5.148 ;       ;
+; ALUctl[3]  ; ALUOut[2]   ;       ; 5.175 ; 5.175 ;       ;
+; ALUctl[3]  ; ALUOut[3]   ;       ; 5.682 ; 5.682 ;       ;
+; ALUctl[3]  ; ALUOut[4]   ;       ; 5.702 ; 5.702 ;       ;
+; ALUctl[3]  ; ALUOut[5]   ;       ; 5.643 ; 5.643 ;       ;
+; ALUctl[3]  ; ALUOut[6]   ;       ; 5.643 ; 5.643 ;       ;
+; ALUctl[3]  ; ALUOut[7]   ;       ; 5.707 ; 5.707 ;       ;
+; ALUctl[3]  ; ALUOut[8]   ;       ; 5.653 ; 5.653 ;       ;
+; ALUctl[3]  ; Zero        ; 5.389 ;       ;       ; 5.389 ;
+; B[0]       ; ALUOut[0]   ; 5.463 ; 5.463 ; 5.463 ; 5.463 ;
+; B[0]       ; ALUOut[1]   ; 5.499 ; 5.499 ; 5.499 ; 5.499 ;
+; B[0]       ; ALUOut[2]   ; 5.650 ;       ;       ; 5.650 ;
+; B[0]       ; ALUOut[3]   ; 5.621 ;       ;       ; 5.621 ;
+; B[0]       ; ALUOut[4]   ; 5.641 ;       ;       ; 5.641 ;
+; B[0]       ; ALUOut[5]   ; 5.582 ;       ;       ; 5.582 ;
+; B[0]       ; ALUOut[6]   ; 5.582 ;       ;       ; 5.582 ;
+; B[0]       ; ALUOut[7]   ; 5.646 ;       ;       ; 5.646 ;
+; B[0]       ; ALUOut[8]   ; 5.592 ;       ;       ; 5.592 ;
+; B[0]       ; Zero        ; 5.783 ; 5.783 ; 5.783 ; 5.783 ;
+; B[1]       ; ALUOut[0]   ; 5.733 ; 5.733 ; 5.733 ; 5.733 ;
+; B[1]       ; ALUOut[1]   ; 5.300 ; 5.524 ; 5.524 ; 5.300 ;
+; B[1]       ; ALUOut[2]   ; 5.489 ;       ;       ; 5.489 ;
+; B[1]       ; ALUOut[3]   ; 5.522 ;       ;       ; 5.522 ;
+; B[1]       ; ALUOut[4]   ; 5.542 ;       ;       ; 5.542 ;
+; B[1]       ; ALUOut[5]   ; 5.483 ;       ;       ; 5.483 ;
+; B[1]       ; ALUOut[6]   ; 5.483 ;       ;       ; 5.483 ;
+; B[1]       ; ALUOut[7]   ; 5.547 ;       ;       ; 5.547 ;
+; B[1]       ; ALUOut[8]   ; 5.493 ;       ;       ; 5.493 ;
+; B[1]       ; Zero        ; 5.808 ; 5.584 ; 5.584 ; 5.808 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 8     ; 8    ;
+; Unconstrained Input Port Paths  ; 80    ; 80   ;
+; Unconstrained Output Ports      ; 10    ; 10   ;
+; Unconstrained Output Port Paths ; 80    ; 80   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Mar 24 18:49:02 2021
+Info: Command: quartus_sta ula -c ula
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ula.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4535 megabytes
+    Info: Processing ended: Wed Mar 24 18:49:05 2021
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+

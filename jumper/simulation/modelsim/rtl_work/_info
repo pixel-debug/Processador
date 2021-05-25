@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\Aula-8-Lab-AOC1_marina-bernardes-diniz\jumper\simulation\modelsim
+vjumper
+In8cSW<8Y563KgmVQj9=::1
+Vfdg4Gm22eTk4Wz9h9Y2H60
+Z1 dC:\marinaSD\PROCESSADOR\Aula-8-Lab-AOC1_marina-bernardes-diniz\jumper\simulation\modelsim
+w1617911466
+8C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/jumper.v
+FC:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/jumper.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 77HAZIV>i;zeO=SP`oM0c3
+!s85 0
+!s108 1617911527.665000
+!s107 C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/jumper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper|C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/jumper.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper -O0
+vtest_jumper
+!i10b 1
+!s100 36GEG>j64cibEFDa1glk[3
+IZY<n]^E4AKbQ2<7oVNZF`3
+Ve]_UWZTFjjH;e388DAnJk3
+R1
+w1617911470
+8C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/test_jumper.v
+FC:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/test_jumper.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1617911528.146000
+!s107 C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/test_jumper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper|C:/marinaSD/PROCESSADOR/Aula-8-Lab-AOC1_marina-bernardes-diniz/jumper/test_jumper.v|
+!s101 -O0
+R3
+R4

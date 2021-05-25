@@ -1,0 +1,16 @@
+module test_registradores;
+	reg a, b;
+	wire out1;
+	
+	initial begin // dados de teste
+		a = 000; b = 000;
+		#1a = 001;
+		#1b = 001;
+		#1a = 000;
+	end
+	initial begin
+		$monitor("Time = %0d a = %b b=%b out1 = %b",
+					$time, a, b, out1);
+	end
+	registradores gate1(a,b,out1);
+endmodule

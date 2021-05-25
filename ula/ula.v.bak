@@ -1,0 +1,18 @@
+module ula (ULAop, A, B, resultado, Zero);
+	input [3:0] ULAop;
+	input [7:0] A,B;
+	output reg [7:0] resultado;
+	output Zero;
+	assign Zero = (resultado==0); 
+	always @(ULAop, A, B) 
+			case (ULAop)
+			0: resultado <= A & B;
+			1: resultado <= A | B;
+			2: resultado <= A + B;
+			3: resultado <= A – B;
+			4: resultado <= A < B ? 1:0;
+			5: resultado <= ~(A | B); 
+			default: resultado <= 0; 
+			
+	endcase
+endmodule

@@ -1,0 +1,25 @@
+module memoria ( label, clk, instrucao);
+	input[7:0] label;
+	input clk;
+	output reg [7:0] instrucao;
+	reg [7:0]Memo[21:0]
+
+	integer i;
+
+	
+	
+	
+	
+	initial begin
+  
+		for (i = 0; i < 21; i = i + 1) 
+			MEMO[i] = 0;
+			//$readmemb("banco_de_memoria.txt", Memo);
+		end
+
+	always @(posedge clk) begin
+	  
+		 instrucao <= Memo[endereco];
+	  end
+
+endmodule

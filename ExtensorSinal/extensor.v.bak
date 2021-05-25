@@ -1,0 +1,14 @@
+module extensor(entrada, saida);
+
+    input [2:0] entrada;
+    output [7:0] saida;
+
+    assign saida[1:0] = entrada[1:0];
+    assign saida[7] = entrada[2];
+    assign saida[6] = entrada[2];
+    assign saida[5] = entrada[2];
+    assign saida[4] = entrada[2];
+    assign saida[3] = entrada[2];
+    assign saida[2] = entrada[2];
+
+endmodule

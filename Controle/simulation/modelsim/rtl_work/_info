@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\PROCESSADOR\Aula-9-Lab-AOC1_marina-bernardes-diniz\Controle\simulation\modelsim
+vcontroleUnit
+IF4:?iI?[hY65Af2=6j=6X1
+VB6LDJ:nD6kKO19<A<Hijm1
+Z1 dC:\marinaSD\PROCESSADOR\Aula-9-Lab-AOC1_marina-bernardes-diniz\Controle\simulation\modelsim
+w1617833813
+8C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/controleUnit.v
+FC:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/controleUnit.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+ncontrole@unit
+!i10b 1
+!s100 hF5S3nd>O<dUc@^1KLzbO2
+!s85 0
+!s108 1617834639.798000
+!s107 C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/controleUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle|C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/controleUnit.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle -O0
+vtest_controle
+!i10b 1
+!s100 9zg3[I>jk>1[EB4HoIad41
+IO0^?41F?V>XY7RTd>UW5[2
+VD<O55fJ83>^2ClnEP41HF3
+R1
+w1617833917
+8C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/test_controle.v
+FC:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/test_controle.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1617834640.016000
+!s107 C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/test_controle.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle|C:/marinaSD/PROCESSADOR/Aula-9-Lab-AOC1_marina-bernardes-diniz/Controle/test_controle.v|
+!s101 -O0
+R3
+R4

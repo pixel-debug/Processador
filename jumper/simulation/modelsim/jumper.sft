@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (Verilog)"
+set corner_file_list {
+	{{"Slow Model"} {jumper.vo jumper_v.sdo}}
+	{{"Fast Model"} {jumper_fast.vo jumper_v_fast.sdo}}
+}

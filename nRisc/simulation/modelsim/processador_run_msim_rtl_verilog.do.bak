@@ -1,0 +1,28 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/portaAND.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/controleUnit.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/adder.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/ulaControl.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/ula.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/registradores.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/pc.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/mux21.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/memoria.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/extensor.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/processador.v}
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/memoria_dados.v}
+
+vlog -vlog01compat -work work +incdir+C:/marinaSD/PROCESSADOR/nRisc {C:/marinaSD/PROCESSADOR/nRisc/test_processador.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test_processador
+
+add wave *
+view structure
+view signals
+run -all

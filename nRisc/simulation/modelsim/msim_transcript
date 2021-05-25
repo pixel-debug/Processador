@@ -1,0 +1,254 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do processador_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/portaAND.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module portaAND
+# 
+# Top level modules:
+# 	portaAND
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controleUnit
+# 
+# Top level modules:
+# 	controleUnit
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/adder.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ulaControl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ulaControl
+# 
+# Top level modules:
+# 	ulaControl
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ula
+# 
+# Top level modules:
+# 	ula
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/registradores.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module registradores
+# 
+# Top level modules:
+# 	registradores
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/pc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module programCounter
+# 
+# Top level modules:
+# 	programCounter
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/mux21.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux21
+# 
+# Top level modules:
+# 	mux21
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/extensor.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module extensor
+# 
+# Top level modules:
+# 	extensor
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module processador
+# 
+# Top level modules:
+# 	processador
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria_dados.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memoria_dados
+# 
+# Top level modules:
+# 	memoria_dados
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memoria
+# 
+# Top level modules:
+# 	memoria
+# 
+# vlog -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc {C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/test_processador.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_processador
+# 
+# Top level modules:
+# 	test_processador
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  test_processador
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_processador 
+# Loading work.test_processador
+# Loading work.processador
+# Loading work.programCounter
+# Loading work.adder
+# Loading work.memoria
+# Loading work.controleUnit
+# Loading work.registradores
+# Loading work.extensor
+# Loading sgate_ver.mux21
+# Loading work.ulaControl
+# Loading work.ula
+# Loading work.memoria_dados
+# Loading work.portaAND
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(14): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'pc_in'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/pc.v(1).
+# 
+#         Region: /test_processador/gate/pc
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'escrita'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'escritaPC'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'ulaFonte'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'ulaOP'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'pula'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'regFonte'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'comparador'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'lerMemo'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(18): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'escreveMemo'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v(1).
+# 
+#         Region: /test_processador/gate/control
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(20): [PCDPC] - Port size (3 or 3) does not match connection size (1) for port 'Reg2'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/registradores.v(1).
+# 
+#         Region: /test_processador/gate/registr
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(20): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'Escrita'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/registradores.v(1).
+# 
+#         Region: /test_processador/gate/registr
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(22): [PCDPC] - Port size (3 or 3) does not match connection size (8) for port 'in'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/extensor.v(1).
+# 
+#         Region: /test_processador/gate/extend
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(23): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'dataa'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_regi
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(23): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'datab'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_regi
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(23): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'dataout'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_regi
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(23): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'outputselect'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_regi
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(25): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'ALUOp'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ulaControl.v(1).
+# 
+#         Region: /test_processador/gate/ULAcontrol
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(25): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'ALUCtl'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ulaControl.v(1).
+# 
+#         Region: /test_processador/gate/ULAcontrol
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(26): [PCDPC] - Port size (4 or 4) does not match connection size (8) for port 'ALUctl'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v(1).
+# 
+#         Region: /test_processador/gate/ulita
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(26): [PCDPC] - Port size (2 or 2) does not match connection size (8) for port 'A'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v(1).
+# 
+#         Region: /test_processador/gate/ulita
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(26): [PCDPC] - Port size (2 or 2) does not match connection size (8) for port 'B'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v(1).
+# 
+#         Region: /test_processador/gate/ulita
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(26): [PCDPC] - Port size (9 or 9) does not match connection size (8) for port 'ALUOut'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v(1).
+# 
+#         Region: /test_processador/gate/ulita
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(29): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'LerMemo'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria_dados.v(1).
+# 
+#         Region: /test_processador/gate/memoData
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(29): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'EscrMemo'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria_dados.v(1).
+# 
+#         Region: /test_processador/gate/memoData
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(30): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'dataa'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_mem
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(30): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'datab'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_mem
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(30): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'dataout'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_mem
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(30): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'outputselect'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_mem
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(35): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'dataa'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_jump
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(35): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'datab'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_jump
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(35): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'dataout'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_jump
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(35): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'outputselect'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_jump
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(36): [PCDPC] - Port size (3 or 3) does not match connection size (8) for port 'in'. The port definition is at: C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/extensor.v(1).
+# 
+#         Region: /test_processador/gate/jump
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(38): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'dataa'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_jumper
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(38): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'datab'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_jumper
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(38): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'dataout'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_jumper
+# ** Warning: (vsim-3015) C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v(38): [PCDPC] - Port size (1 or 1) does not match connection size (8) for port 'outputselect'. The port definition is at: C:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/sgate.v(190).
+# 
+#         Region: /test_processador/gate/mux_jumper
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Program Counter
+# Testando ADDER...
+# Testando MEMORIA ...
+# Lendo o banco de memoria...
+# ** Warning: (vsim-7) Failed to open readmem file "banco_de_memoria.dat" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria.v(22)
+#    Time: 0 ps  Iteration: 0  Instance: /test_processador/gate/memo
+# Testando CONTROLE ...
+# Lendo o banco de registradores...
+# Testando extensor de sinal...
+# Testando CONTROLE ULA...
+# Testando ULA...
+# Testando MEMORIA ...
+# ** Warning: (vsim-7) Failed to open readmem file "banco_de_memoria.dat" in read mode.
+# 
+# No such file or directory. (errno = ENOENT)    : C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria_dados.v(20)
+#    Time: 0 ps  Iteration: 0  Instance: /test_processador/gate/memoData
+# Testando porta ...
+# Testando extensor de sinal...
+# Testando ADDER...
+#  in 1 = zzzzzzzz   in 2 = xxxxxxxx  saida = xxxxxxxx 
+#  in 1 = zzzzzzzz   in 2 = 00000001  saida = xxxxxxxx 
+# Break in NamedBeginStat stop_at at C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/test_processador.v line 8
+# Simulation Breakpoint: Break in NamedBeginStat stop_at at C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/test_processador.v line 8
+# MACRO ./processador_run_msim_rtl_verilog.do PAUSED at line 28

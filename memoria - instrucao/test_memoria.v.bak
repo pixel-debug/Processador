@@ -1,0 +1,39 @@
+
+
+/*
+	***********************************************
+		Módulo de teste do bloco de Memória
+	***********************************************
+*/
+
+
+module test_memoria;
+	input endereco, clock, instrucao;
+	wire out;
+	initial begin
+		instrucao = 00000000;
+		#1instrucao = 00000111;
+		#1instrucao = 00000101;
+		#1instrucao = 00001010;
+		#1instrucao = 00000100;
+		#1instrucao = 00001011;
+		#1instrucao = 00000110;
+		#1instrucao = 11100000;
+		#1instrucao = 00000000;
+		#1instrucao = 00000010;
+		#1instrucao = 00011111;
+	
+	end
+	initial begin
+		endereco = 00000000;
+		#1endereco = 00000111;
+
+	
+	end
+	initial begin
+		$monitor("Time = %0d endereco = %b instrucao=%b out = %b",
+					$time, endereco, instrucao, out);
+	end
+	
+	memoria gate( endereco, 200, instrucao);
+endmodule

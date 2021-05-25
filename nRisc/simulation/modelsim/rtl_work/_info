@@ -1,0 +1,269 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\marinaSD\Aula-10-Lab-AOC1_marina-bernardes-diniz\nRisc\simulation\modelsim
+vadder
+IMaRoFJTiABUf^dK?1JMMP0
+VB@G;0i=4j4Vg>;f_]@]GY3
+Z1 dC:\marinaSD\Aula-10-Lab-AOC1_marina-bernardes-diniz\nRisc\simulation\modelsim
+w1617930680
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/adder.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/adder.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc -O0
+!i10b 1
+!s100 AT^K2>dB_6aec6;_aPjGP0
+!s85 0
+!s108 1617995504.225000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/adder.v|
+!s101 -O0
+vcontroleUnit
+IIKl4>acHooA_f<bRzk1Lz2
+VB6LDJ:nD6kKO19<A<Hijm1
+R1
+w1617930357
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v
+L0 1
+R2
+r1
+31
+R3
+R4
+ncontrole@unit
+!i10b 1
+!s100 B;j[nYP`lzKoc8mCM>OZF1
+!s85 0
+!s108 1617995503.972000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/controleUnit.v|
+!s101 -O0
+vextensor
+IY:=S283V^B4zbC7]Kz`CG1
+VSeoeAl:<kni09QV7U?8XU0
+R1
+w1617930443
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/extensor.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/extensor.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 >m?Po>6kXc5QCLaD1c<bZ2
+!s85 0
+!s108 1617995507.562000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/extensor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/extensor.v|
+!s101 -O0
+vmemoria
+Idc>@0b0oh>:Qmj45EA;?[1
+VW8HkzF6=SW3H=_5f`P3KB0
+R1
+w1617931682
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 @TD053XGEX>5m9`_;Md5n3
+!s85 0
+!s108 1617995508.411000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria.v|
+!s101 -O0
+vmemoria_dados
+IT5Y]:^0YMd;mPgH[Zl3ZQ2
+V]hWYlJFZk8BRfdTiVC3dz3
+R1
+w1617931702
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria_dados.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria_dados.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 J6e0m_hKBk^Ko6]JLmhKj0
+!s85 0
+!s108 1617995508.248000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria_dados.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/memoria_dados.v|
+!s101 -O0
+vmux21
+IC>3CijMPYZdQ[S=NBc=eS2
+V9IROfJN>h_50[4^n3:@_o2
+R1
+w1617930640
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/mux21.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/mux21.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 j7zaO:?RG[FZmnJz8:bga0
+!s85 0
+!s108 1617995506.999000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/mux21.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/mux21.v|
+!s101 -O0
+vportaAND
+I8kl8FG<H>T`WUE@UQ=1nB2
+VcHQVQFW=zlJfX`Ph3E=HB2
+R1
+w1617930302
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/portaAND.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/portaAND.v
+L0 1
+R2
+r1
+31
+R3
+nporta@a@n@d
+R4
+!i10b 1
+!s100 i0]QaORzj9jmjMAleAY681
+!s85 0
+!s108 1617995503.831000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/portaAND.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/portaAND.v|
+!s101 -O0
+vprocessador
+I0]hPim2WS]nYWESC3hAEg3
+VILX8_12KhoVJB6K1SIa]k2
+R1
+w1617931100
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 k743bcf4hlG4I@DFMmezc1
+!s85 0
+!s108 1617995508.078000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/processador.v|
+!s101 -O0
+vprogramCounter
+IYfheRz_cja2>YMP=5<Dc[3
+Va4^:1QgnHXl50:F1Ic9Uo2
+R1
+w1616129924
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/pc.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/pc.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nprogram@counter
+!i10b 1
+!s100 BCWI>zS1zWZZ0P=`jF1FH2
+!s85 0
+!s108 1617995505.524000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/pc.v|
+!s101 -O0
+vregistradores
+Ig81Hagn`U4PH7jW3ah``B1
+V]S>@H7M_<Ni=YUE?U5ne83
+R1
+w1617931018
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/registradores.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/registradores.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 dZPz4H_N5Q2zHlimI5kNf0
+!s85 0
+!s108 1617995505.303000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/registradores.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/registradores.v|
+!s101 -O0
+vtest_processador
+!i10b 1
+!s100 m`8h_KhFz_O@5g4WIBDjS2
+IFo=CJA:e:^4YD0XFg2m0Z3
+V@Nl4T1dQz?NggbiN@c55^1
+R1
+w1617931507
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/test_processador.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/test_processador.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1617995508.578000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/test_processador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/test_processador.v|
+!s101 -O0
+R3
+R4
+vula
+IeGmPblJ9I97[`_9f`3^^n1
+Vk5O>ZP::c]^=D]_AHi[=j0
+R1
+w1616622670
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 6dA=9D:gn[24I`oERjj9O0
+!s85 0
+!s108 1617995504.625000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ula.v|
+!s101 -O0
+vulaControl
+Imzm80MP?M:`T]3kd8c>og3
+Vk[W@^U0cjckX4fbW75T:53
+R1
+w1617897078
+8C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ulaControl.v
+FC:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ulaControl.v
+L0 1
+R2
+r1
+31
+R3
+R4
+nula@control
+!i10b 1
+!s100 7?da>OQA7Z^50[U_R9oRR3
+!s85 0
+!s108 1617995504.368000
+!s107 C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ulaControl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc|C:/marinaSD/Aula-10-Lab-AOC1_marina-bernardes-diniz/nRisc/ulaControl.v|
+!s101 -O0
