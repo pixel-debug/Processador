@@ -29,3 +29,7 @@ Atendendo às restrições de endereçamento impostas por uma arquitetura de 8 b
 O caminho de dados também foi pensado para atender um propósito geral, atendendo às restrições de endereçamento e as necessidades do programa teste:
 
 ![image](https://user-images.githubusercontent.com/62568976/119491757-adfe3800-bd34-11eb-964b-0d0d23dc74a4.png)
+
+###### ** Importante ** 
+Ao implementar o módulo do MUX, percebi que não funcionava na minha máquina, apenas nas dos colegas. Como resultado, o módulo final ( juntei tudo - "nRisc" ) não realizou a
+simulação como deveria. Porém, individualmente, os blocos funcionam.
